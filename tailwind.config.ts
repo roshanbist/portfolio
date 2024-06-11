@@ -8,27 +8,33 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontSize: {
+        sm: ['14px', '20px'],
+        base: ['16px', '20px'],
+        lg: ['20px', '24px'],
+        xl: ['24px', '29px'],
+        '2xl': ['30px', '35px'],
+        '3xl': ['48px', '58px'],
+        '4xl': ['96px', '106px'],
+      },
       colors: {
+        border: 'hsl(var(--border))',
+        input: 'hsl(var(--input))',
+        ring: 'hsl(var(--ring))',
+        background: 'hsl(var(--background))',
+        foreground: 'hsl(var(--foreground))',
         primary: {
           DEFAULT: 'hsl(var(--primary))',
           foreground: 'hsl(var(--primary-foreground))',
         },
-        accentGreen: {
-          DEFAULT: 'hsl(var(--accent-green))',
-          foreground: 'hsl(var(--accent-green-foreground))',
-        },
-        accentOrange: {
-          DEFAULT: 'hsl(var(--accent-orange))',
-          foreground: 'hsl(var(--accent-orange-foreground))',
-        },
-        neutral: {
-          background: 'hsl(var(--neutral-background))',
-          foreground: 'hsl(var(--neutral-foreground))',
+        accent: {
+          DEFAULT: 'hsl(var(--accent))',
+          foreground: 'hsl(var(--accent-foreground))',
         },
       },
     },
   },
   plugins: [],
-  darkMode: 'class',
+  darkMode: ['class'],
 };
 export default config;
