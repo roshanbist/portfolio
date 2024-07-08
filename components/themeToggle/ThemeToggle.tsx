@@ -2,19 +2,20 @@
 
 import { useTheme } from 'next-themes';
 import { FiSun, FiMoon } from 'react-icons/fi';
-// import { useEffect, useState } from 'react';
 
 const ThemeToggle = () => {
-  // const
   const { theme, setTheme } = useTheme();
 
   return (
-    <button
-      className='bg-primary text-primary-foreground'
-      onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-    >
-      {theme === 'dark' ? <FiSun /> : <FiMoon />}
-    </button>
+    <div>
+      <button
+        className='bg-primary text-[20px] inline-flex'
+        onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+      >
+        <FiSun className='height-[20px] width-[20px] transition-all rotate-90 scale-0 dark:scale-100 dark:-rotate-0' />
+        <FiMoon className='height-[20px] width-[20px] absolute transition-all scale-100 dark:scale-0 rotate-0 dark:rotate-90' />
+      </button>
+    </div>
   );
 };
 

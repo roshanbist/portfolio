@@ -4,21 +4,33 @@
 
 @layer base {
   :root {
+    /* main body background color */
     --background: 0 100% 100%;
+    /* main body text color */
     --foreground: 210 11% 7%;
+    /* primary button background color */
     --primary: 142 71% 45%;
+    /* primary button white text color */
     --primary-foreground: 0 100% 100%;
+    /* card background color */
     --accent: 0 0% 97%;
+    /* card text color */
     --accent-foreground: 210 11% 7%;
+    /* border color */
     --border: 240 6% 90%;
+    /* input background color */
     --input: 240 6% 90%;
+    /* default link color */
     --ring: 142 71% 45%;
+    /* default link hover color */
+    --ring-foreground: 142 76% 36%;
   }
 
   .dark {
     --background: 210 11% 7%;
     --foreground: 0 100% 100%;
     --primary: 142 71% 45%;
+    /* primary button green text color */
     --primary-foreground: 143 80% 10%;
     --accent: 0 1% 15%;
     --accent-foreground: 0 100% 100%;
@@ -31,5 +43,11 @@
 @layer base {
   body {
     @apply bg-background text-foreground;
+  }
+
+  .max-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
   }
 }

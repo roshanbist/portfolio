@@ -3,12 +3,14 @@ import Header from '@/components/header/Header';
 
 export default function Home() {
   return (
-    <main className='relative'>
+    <>
       <Header />
-      <div>
-        <h1>Hello, Portfolio</h1>
-      </div>
+      <main>
+        <div>
+          <h1>Hello, Portfolio</h1>
+        </div>
+      </main>
       <Footer />
-    </main>
+    </>
   );
 }
