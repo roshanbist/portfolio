@@ -16,6 +16,10 @@
     --accent: 0 0% 97%;
     /* card text color */
     --accent-foreground: 210 11% 7%;
+    /* card secondary background color */
+    --destructive: 210 40% 96.1%;
+    /* card secondary text color */
+    --destructive-foreground: 210 11% 7%;
     /* border color */
     --border: 240 6% 90%;
     /* input background color */
@@ -34,13 +38,24 @@
     --primary-foreground: 143 80% 10%;
     --accent: 0 1% 15%;
     --accent-foreground: 0 100% 100%;
+    /* card secondary background color */
+    --destructive: 218 17% 18%;
+    /* card secondary text color */
+    --destructive-foreground: 0 100% 100%;
     --border: 240 4% 24%;
     --input: 240 4% 24%;
+    /* default link color */
     --ring: 142 71% 45%;
+    /* default link hover color */
+    --ring-foreground: 142 76% 36%;
   }
 }
 
 @layer base {
+  html {
+    font-family: var(--font-roboto);
+  }
+
   body {
     @apply bg-background text-foreground;
   }

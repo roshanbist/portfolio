@@ -17,6 +17,10 @@ const config: Config = {
         '3xl': ['48px', '58px'],
         '4xl': ['96px', '106px'],
       },
+      fontFamily: {
+        roboto: ['var(--font-roboto)'],
+        pacifico: ['var(--font-pacifico)'],
+      },
       colors: {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
@@ -29,6 +33,10 @@ const config: Config = {
         accent: {
           DEFAULT: 'hsl(var(--accent))',
           foreground: 'hsl(var(--accent-foreground))',
+        },
+        destructive: {
+          DEFAULT: 'hsl(var(--destructive))',
+          foreground: 'hsl(var(--destructive-foreground))',
         },
         ring: {
           DEFAULT: 'hsl(var(--ring))',

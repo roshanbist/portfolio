@@ -5,10 +5,12 @@ import React from 'react';
 const Navbar = () => {
   return (
     <nav>
-      <ul>
+      <ul className='md:flex md:flex-wrap text-'>
         {menuItems.map((menu) => (
-          <li key={menu.label}>
-            <Link href={menu.path}>{menu.label}</Link>
+          <li key={menu.label} className='mx-4'>
+            <Link href={menu.path} className='font-medium'>
+              {menu.label}
+            </Link>
           </li>
         ))}
       </ul>

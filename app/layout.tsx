@@ -1,11 +1,23 @@
 import type { Metadata } from 'next';
-import { Roboto } from 'next/font/google';
+import { Roboto, Pacifico } from 'next/font/google';
+// import { Pacifico } from 'next/font/google';
 
 // Theme provider
 import ThemeProvider from '@/components/themeProvider/ThemeProvider';
 import './globals.css';
 
-const roboto = Roboto({ subsets: ['latin'], weight: ['400', '500', '700'] });
+const roboto = Roboto({
+  subsets: ['latin'],
+  weight: ['400', '500', '700'],
+  variable: '--font-roboto',
+});
+
+const pacifico = Pacifico({
+  subsets: ['latin'],
+  weight: ['400'],
+  display: 'swap',
+  variable: '--font-pacifico',
+});
 
 export const metadata: Metadata = {
   title: "Roshan's Portfolio",
@@ -19,12 +31,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en' suppressHydrationWarning>
-      <body className={roboto.className}>
+      <body className={`${roboto.variable} ${pacifico.variable} font-roboto`}>
         <ThemeProvider
           attribute='class'
           defaultTheme='system'
           enableSystem
-          disableTransitionOnChange
+          // disableTransitionOnChange
         >
           {children}
         </ThemeProvider>
