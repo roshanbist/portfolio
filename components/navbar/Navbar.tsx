@@ -1,19 +1,92 @@
-import { menuItems } from '@/constants/menuItems';
+'use client';
+
+import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
-import React from 'react';
+import { LuAlignRight, LuX } from 'react-icons/lu';
+
+import { menuItems } from '@/constants/menuItems';
+import { usePathname } from 'next/navigation';
 
 const Navbar = () => {
+  const [isMobileNav, setIsMobileNav] = useState(false);
+  const [isMobileView, setIsMobileView] = useState(false);
+  const navRef = useRef<HTMLElement | null>(null);
+
+  const pagePath = usePathname();
+
+  console.log('pagePath', pagePath);
+
+  useEffect(() => {
+    isMobileNav
+      ? document.body.classList.add('nav-active')
+      : document.body.classList.remove('nav-active');
+
+    const bodyClasslist = document.body.classList;
+    bodyClasslist.contains('nav-active')
+      ? document.body.classList.add('overflow-hidden')
+      : document.body.classList.remove('overflow-hidden');
+  }, [isMobileNav]);
+
+  useEffect(() => {
+    const menuHandler = (e: Event) => {
+      if (!navRef.current?.contains(e.target as Node)) {
+        setIsMobileNav(false);
+        document.body.classList.remove('nav-active');
+      }
+    };
+
+    const resizeHandler = () => {
+      if (window.innerWidth >= 768) {
+        setIsMobileNav(false);
+        setIsMobileView(false);
+      } else {
+        setIsMobileView(true);
+      }
+    };
+
+    document.addEventListener('mousedown', menuHandler);
+    window.addEventListener('resize', resizeHandler);
+    resizeHandler();
+
+    return () => {
+      document.removeEventListener('mousedown', menuHandler);
+      document.removeEventListener('resize', resizeHandler);
+    };
+  }, []);
+
   return (
-    <nav>
-      <ul className='md:flex md:flex-wrap text-'>
-        {menuItems.map((menu) => (
-          <li key={menu.label} className='mx-4'>
-            <Link href={menu.path} className='font-medium'>
-              {menu.label}
-            </Link>
-          </li>
-        ))}
-      </ul>
+    <nav ref={navRef}>
+      <span
+        className='inline-flex size-16 rounded-full text-[2.5rem] cursor-pointer md:hidden justify-center items-center max-md:hover:bg-destructive max-md:transition-colors'
+        onClick={() => setIsMobileNav(!isMobileNav)}
+      >
+        {isMobileNav ? <LuX /> : <LuAlignRight />}
+      </span>
+      <div
+        className={`max-md:fixed max-md:h-svh w-full left-0 max-md:top-[8.1rem]  max-md:bg-background ${
+          isMobileNav ? 'translate-x-0' : 'max-md:translate-x-full'
+        } ${isMobileView ? 'transition-transform' : ''}`}
+      >
+        <ul className='md:flex md:flex-wrap'>
+          {menuItems.map((menu) => (
+            <li key={menu.label} className='md:mx-[1.2rem] max-md:border-b'>
+              <Link
+                href={menu.path}
+                className={`relative font-medium uppercase max-md:block max-md:py-[1.2rem] max-md:px-8 max-md:hover:bg-primary max-md:transition-colors group ${
+                  pagePath === menu.path ? 'max-md:bg-primary' : ''
+                }`}
+              >
+                {menu.label}
+                <span
+                  className={`block md:absolute md:bottom-[-1rem] md:left-0 md:w-0 md:h-2 md:bg-primary md:transition-[width] group-hover:md:w-full ${
+                    pagePath === menu.path ? 'md:w-full' : ''
+                  }`}
+                ></span>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
     </nav>
   );
 };

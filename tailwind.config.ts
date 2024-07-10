@@ -9,13 +9,13 @@ const config: Config = {
   theme: {
     extend: {
       fontSize: {
-        sm: ['14px', '20px'],
-        base: ['16px', '20px'],
-        lg: ['20px', '24px'],
-        xl: ['24px', '29px'],
-        '2xl': ['30px', '35px'],
-        '3xl': ['48px', '58px'],
-        '4xl': ['96px', '106px'],
+        sm: ['1.4rem', '1.8rem'],
+        base: ['1.6rem', '2rem'],
+        lg: ['2rem', '2.4rem'],
+        xl: ['2.4rem', '2.9rem'],
+        '2xl': ['3rem', '3.5rem'],
+        '3xl': ['4.8rem', '5.8rem'],
+        '4xl': ['9.6rem', '10.6rem'],
       },
       fontFamily: {
         roboto: ['var(--font-roboto)'],
@@ -42,6 +42,9 @@ const config: Config = {
           DEFAULT: 'hsl(var(--ring))',
           foreground: 'hsl(var(--ring-foreground))',
         },
+      },
+      transitionDuration: {
+        DEFAULT: '300ms',
       },
     },
   },

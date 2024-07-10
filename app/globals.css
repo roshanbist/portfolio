@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  /* 1rem = 10px */
+  font-size: 62.5%;
+}
+
 @layer base {
   :root {
     /* main body background color */
@@ -57,12 +62,12 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground text-base;
   }
 
   .max-container {
-    max-width: 1200px;
+    max-width: 120rem;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 1.5rem;
   }
 }

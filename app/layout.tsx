@@ -5,6 +5,7 @@ import { Roboto, Pacifico } from 'next/font/google';
 // Theme provider
 import ThemeProvider from '@/components/themeProvider/ThemeProvider';
 import './globals.css';
+import Scroll from '@/util/Scroll';
 
 const roboto = Roboto({
   subsets: ['latin'],
@@ -31,6 +32,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en' suppressHydrationWarning>
+      <Scroll />
       <body className={`${roboto.variable} ${pacifico.variable} font-roboto`}>
         <ThemeProvider
           attribute='class'
