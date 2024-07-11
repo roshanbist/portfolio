@@ -72,16 +72,18 @@ const Navbar = () => {
             <li key={menu.label} className='md:mx-[1.2rem] max-md:border-b'>
               <Link
                 href={menu.path}
-                className={`relative font-medium uppercase max-md:block max-md:py-[1.2rem] max-md:px-8 max-md:hover:bg-primary max-md:transition-colors group ${
-                  pagePath === menu.path ? 'max-md:bg-primary' : ''
+                className={`relative font-medium uppercase max-md:block max-md:py-[1.2rem] max-md:px-8 max-md:hover:bg-primary md:hover:text-primary transition-colors group ${
+                  pagePath === menu.path
+                    ? 'max-md:bg-primary md:text-primary'
+                    : ''
                 }`}
               >
                 {menu.label}
                 <span
-                  className={`block md:absolute md:bottom-[-1rem] md:left-0 md:w-0 md:h-2 md:bg-primary md:transition-[width] group-hover:md:w-full ${
+                  className={`block mx-auto left-0 right-0 md:absolute md:bottom-[-1rem] md:w-0 md:h-[0.4rem] md:bg-primary md:transition-[width] group-hover:md:w-full ${
                     pagePath === menu.path ? 'md:w-full' : ''
                   }`}
-                ></span>
+                />
               </Link>
             </li>
           ))}

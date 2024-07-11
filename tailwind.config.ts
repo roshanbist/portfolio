@@ -46,6 +46,9 @@ const config: Config = {
       transitionDuration: {
         DEFAULT: '300ms',
       },
+      boxShadow: {
+        sm: '0rem 0.4rem 0.8rem 0rem rgba(0,0,0,0.05)',
+      },
     },
   },
   plugins: [],

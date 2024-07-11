@@ -23,3 +23,25 @@ hover bg (dark and light same) --> opacity 0.9
 
 link default color dark/light same: #22c55e #default link color
 link hover color dark/light : #16A34A #default link hover
+
+<!-- ============================== -->
+
+NOTE: Banner
+
+banner should be simple with curved shape at bottom and typewrite effect and photo on right hand side with circle behind it -> check reference
+
+- can be parallax but text should not be parallax
+
+<!-- ============================== -->
+
+    NOTE: ABOUT
+    about me ma svg ma image on the left side and ABOUT me vanne title with style jasto maile afno paila site ma rakheko chu for title, reference ma save cha tyo
+
+<!-- ============================== -->
+
+footer mathi ko shape curve type ko rakhne from this ->
+https://shanereact.ibthemespro.com/home-four
+
+- get the shape and convert to svg and change the color accordingly to theme with fill option
+
+shadow 1 : 0px 4px 8px 0px rgba(0,0,0,0.08)
