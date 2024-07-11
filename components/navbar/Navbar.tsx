@@ -71,7 +71,7 @@ const Navbar = () => {
           {menuItems.map((menu) => (
             <li key={menu.label} className='md:mx-[1.2rem] max-md:border-b'>
               <Link
-                href={menu.path}
+                href={`${menu.path}`}
                 className={`relative font-medium uppercase max-md:block max-md:py-[1.2rem] max-md:px-8 max-md:hover:bg-primary md:hover:text-primary transition-colors group ${
                   pagePath === menu.path
                     ? 'max-md:bg-primary md:text-primary'
