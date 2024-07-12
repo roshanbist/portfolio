@@ -29,6 +29,7 @@ const config: Config = {
         primary: {
           DEFAULT: 'hsl(var(--primary))',
           foreground: 'hsl(var(--primary-foreground))',
+          hover: 'hsl(var(--primary-hover))',
         },
         accent: {
           DEFAULT: 'hsl(var(--accent))',
@@ -48,6 +49,9 @@ const config: Config = {
       },
       boxShadow: {
         sm: '0rem 0.4rem 0.8rem 0rem rgba(0,0,0,0.05)',
+      },
+      backgroundImage: {
+        avatarUrl: "url('../assets/images/avatar.jpg')",
       },
     },
   },

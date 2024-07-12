@@ -14,7 +14,7 @@ const Navbar = () => {
 
   const pagePath = usePathname();
 
-  console.log('pagePath', pagePath);
+  // console.log('pagePath', pagePath);
 
   useEffect(() => {
     isMobileNav

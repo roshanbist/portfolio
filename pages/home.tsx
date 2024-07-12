@@ -1,0 +1,28 @@
+import AnimatedAvatar from '@/components/avatar/AnimatedAvatar';
+import Banner from '@/components/banner/Banner';
+
+const HomeBanner = () => {
+  return (
+    <section
+      id='home'
+      className='py-[8.1rem] md:py-[10rem] relative min-h-[80rem] flex flex-wrap flex-col justify-center'
+    >
+      <div className='max-container w-full'>
+        <Banner />
+      </div>
+
+      <div className='absolute left-0 bottom-0 w-full hidden md:block'>
+        <svg
+          x='0px'
+          y='0px'
+          className='fill-accent'
+          viewBox='0 186.5 1920 113.5'
+        >
+          <polygon points='0,300 655.167,210.5 1432.5,300 1920,198.5 1920,300 '></polygon>
+        </svg>
+      </div>
+    </section>
+  );
+};
+
+export default HomeBanner;

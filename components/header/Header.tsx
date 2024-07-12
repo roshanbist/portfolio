@@ -11,7 +11,7 @@ const Header = () => {
 
   useEffect(() => {
     const scrollHandler = () => {
-      if (window.scrollY > 200) {
+      if (window.scrollY > 150) {
         if (window.scrollY > lastScroll) {
           setIsHeader('hide');
         } else {
@@ -23,6 +23,7 @@ const Header = () => {
 
       setLastScroll(window.scrollY);
     };
+    // console.log(lastScroll);
 
     window.addEventListener('scroll', scrollHandler);
 
@@ -33,11 +34,11 @@ const Header = () => {
 
   return (
     <header
-      className={`border-b shadow-sm border-border py-[1rem] md:py-[1.5rem] fixed top-0 w-full bg-background/95 backdrop-blur-sm transition-transform duration-[500ms] ${
+      className={`z-10 py-[1rem] md:py-[1.5rem] fixed top-0 w-full bg-background/80 backdrop-blur-sm transition-transform duration-[500ms] ${
         isHeader === 'hide'
           ? '-translate-y-[10rem]'
           : isHeader === 'show'
-          ? 'translate-y-0'
+          ? 'translate-y-0 border-b shadow-sm border-border/35'
           : ''
       }`}
     >

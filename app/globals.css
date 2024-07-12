@@ -17,6 +17,8 @@ html {
     --primary: 142 71% 45%;
     /* primary button white text color */
     --primary-foreground: 0 100% 100%;
+    /* primary button background hover */
+    --primary-hover: 142 73% 36%;
     /* card background color */
     --accent: 0 0% 97%;
     /* card text color */
@@ -41,7 +43,9 @@ html {
     --primary: 142 71% 45%;
     /* primary button green text color */
     --primary-foreground: 143 80% 10%;
-    --accent: 0 1% 15%;
+    --primary-hover: 142 73% 36%;
+    /* --accent: 0 1% 15%; */
+    --accent: 201 12% 15%;
     --accent-foreground: 0 100% 100%;
     /* card secondary background color */
     --destructive: 218 17% 18%;
@@ -66,8 +70,34 @@ html {
   }
 
   .max-container {
-    max-width: 120rem;
+    max-width: 132rem;
     margin: 0 auto;
     padding: 0 1.5rem;
+  }
+
+  .banner_curve {
+    fill: var(--destructive) !important;
+  }
+
+  .btn-primary {
+    @apply bg-primary uppercase border-2 px-4 py-6 border-primary text-primary-foreground font-medium tracking-[0.1rem] hover:bg-primary-hover hover:border-primary-hover transition-colors;
+  }
+}
+
+.avatar-img {
+  animation: morph 8s ease-in-out infinite 1s;
+  background-blend-mode: multiply;
+  box-shadow: inset 0px 0px 0px 9px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes morph {
+  0% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
   }
 }

@@ -5,7 +5,7 @@ export const menuItems = [
   },
   {
     label: 'About',
-    path: '/#about',
+    path: '/about',
   },
   {
     label: 'Skills',
