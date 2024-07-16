@@ -18,7 +18,7 @@ html {
     /* primary button white text color */
     --primary-foreground: 0 100% 100%;
     /* primary button background hover */
-    --primary-hover: 142 73% 36%;
+    --primary-hover: 142 71% 30%;
     /* card background color */
     --accent: 0 0% 97%;
     /* card text color */
@@ -43,7 +43,7 @@ html {
     --primary: 142 71% 45%;
     /* primary button green text color */
     --primary-foreground: 143 80% 10%;
-    --primary-hover: 142 73% 36%;
+    --primary-hover: 142 71% 30%;
     /* --accent: 0 1% 15%; */
     --accent: 201 12% 15%;
     --accent-foreground: 0 100% 100%;
@@ -87,7 +87,7 @@ html {
 .avatar-img {
   animation: morph 8s ease-in-out infinite 1s;
   background-blend-mode: multiply;
-  box-shadow: inset 0px 0px 0px 9px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0px 0px 0px 9px rgba(255, 255, 255, 0.2);
 }
 
 @keyframes morph {

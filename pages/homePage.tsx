@@ -1,12 +1,13 @@
-import AnimatedAvatar from '@/components/avatar/AnimatedAvatar';
 import Banner from '@/components/banner/Banner';
+import ParticlesLayout from '@/components/banner/ParticlesLayout';
 
-const HomeBanner = () => {
+const HomePage = () => {
   return (
     <section
       id='home'
-      className='py-[8.1rem] md:py-[10rem] relative min-h-[80rem] flex flex-wrap flex-col justify-center'
+      className='py-[8.1rem] md:py-[10rem] relative min-h-[85rem] flex flex-wrap flex-col justify-center overflow-hidden'
     >
+      <ParticlesLayout />
       <div className='max-container w-full'>
         <Banner />
       </div>
@@ -25,4 +26,4 @@ const HomeBanner = () => {
   );
 };
 
-export default HomeBanner;
+export default HomePage;

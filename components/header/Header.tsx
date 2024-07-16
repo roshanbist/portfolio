@@ -34,7 +34,7 @@ const Header = () => {
 
   return (
     <header
-      className={`z-10 py-[1rem] md:py-[1.5rem] fixed top-0 w-full bg-background/80 backdrop-blur-sm transition-transform duration-[500ms] ${
+      className={`z-[10000] py-[1rem] md:py-[1.5rem] fixed top-0 w-full bg-background/80 backdrop-blur-sm transition-transform duration-[500ms] ${
         isHeader === 'hide'
           ? '-translate-y-[10rem]'
           : isHeader === 'show'
