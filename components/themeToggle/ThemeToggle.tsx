@@ -8,7 +8,7 @@ const ThemeToggle = () => {
 
   return (
     <button
-      className='size-16 rounded-full text-[2rem] text-destructive-foreground inline-flex items-center justify-center transition-colors hover:bg-destructive max-md:ml-4'
+      className='size-16 rounded-full text-[2rem] text-destructive-foreground inline-flex items-center justify-center transition-colors hover:bg-destructive max-md:ml-2'
       onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
     >
       <FiSun className='rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100' />

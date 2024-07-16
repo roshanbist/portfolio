@@ -10,35 +10,28 @@ const ParticlesLayout = () => {
     await loadSlim(engine);
   }, []);
 
-  // const particlesLoaded = useCallback(
-  //   async (container: Container | undefined) => {
-  //     await console.log(container);
-  //   },
-  //   []
-  // );
-
   return (
-    <div>
+    <div className='absolute left-0 w-full top-0 h-full z-[-1]'>
       <Particles
         id='tsparticles'
         init={particlesInit}
-        // loaded={particlesLoaded}
-        className='z-[-1]'
+        className='w-full h-full'
         options={{
           background: {
             //   color: {
             //     value: "#0d47a1",
             //   },
           },
+          fullScreen: false,
           fpsLimit: 120,
           interactivity: {
             events: {
               onClick: {
-                enable: true,
+                enable: false,
                 mode: 'push',
               },
               onHover: {
-                enable: true,
+                enable: false,
                 mode: 'repulse',
               },
               resize: true,
@@ -55,13 +48,13 @@ const ParticlesLayout = () => {
           },
           particles: {
             color: {
-              value: '#1ebdda',
+              value: '#21c45d',
             },
             links: {
-              color: '#1ebdda',
+              color: '#21c45d',
               distance: 120,
               enable: true,
-              opacity: 0.5,
+              opacity: 0.3,
               width: 1,
             },
             move: {
@@ -82,7 +75,7 @@ const ParticlesLayout = () => {
               value: 60,
             },
             opacity: {
-              value: 0.5,
+              value: 0.3,
             },
             shape: {
               type: 'circle',

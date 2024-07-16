@@ -5,13 +5,13 @@ import HomePage from '@/pages/homePage';
 
 export default function Home() {
   return (
-    <>
+    <div className='overflow-x-hidden'>
       <Header />
       <main>
         <HomePage />
         <About />
       </main>
       <Footer />
-    </>
+    </div>
   );
 }

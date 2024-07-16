@@ -66,17 +66,13 @@ html {
   }
 
   body {
-    @apply bg-background text-foreground text-base;
+    @apply bg-background text-foreground text-base min-w-[32rem];
   }
 
   .max-container {
     max-width: 132rem;
     margin: 0 auto;
     padding: 0 1.5rem;
-  }
-
-  .banner_curve {
-    fill: var(--destructive) !important;
   }
 
   .btn-primary {
@@ -88,6 +84,12 @@ html {
   animation: morph 8s ease-in-out infinite 1s;
   background-blend-mode: multiply;
   box-shadow: inset 0px 0px 0px 9px rgba(255, 255, 255, 0.2);
+}
+
+.svg-path {
+  clip-path: polygon(0 84%, 100% 52%, 100% 100%, 0 100%);
+  background: var(--accent);
+  height: 300px;
 }
 
 @keyframes morph {
