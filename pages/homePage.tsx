@@ -5,15 +5,18 @@ const HomePage = () => {
   return (
     <section
       id='home'
-      className='pt-[11rem] pb-[7rem] md:py-[9rem] relative md:min-h-[70rem] lg:min-h-[84rem] flex flex-wrap flex-col justify-center'
+      className='pt-[11rem] pb-[7rem] md:py-[9rem] relative min-h-svh flex flex-wrap flex-col justify-center'
     >
+      <div className='absolute left-0 w-full top-0 h-full bg-center z-[-1] bg-banner bg-fixed' />
+      <div className='bg-noise bg-fixed absolute left-0 w-full top-0 h-full bg-center z-[-1] opacity-[0.05]' />
       <ParticlesLayout />
       <div className='max-container w-full'>
         <Banner />
       </div>
 
-      <div className='absolute left-0 bottom-0 w-full hidden md:block [clip-path:polygon(0_100%,_100%_46%,_100%_100%)] h-[30rem] bg-accent'>
-        {/* <svg
+      {/* <div className='absolute left-0 bottom-0 w-full hidden md:block [clip-path:polygon(0_43%,_100%_0%,_100%_100%,_0%_100%)] h-[20rem] bg-accent'>
+      </div> */}
+      {/* <svg
           x='0px'
           y='0px'
           className='fill-accent'
@@ -21,7 +24,6 @@ const HomePage = () => {
         >
           <polygon points='0,300 655.167,210.5 1432.5,300 1920,198.5 1920,300 '></polygon>
         </svg> */}
-      </div>
     </section>
   );
 };

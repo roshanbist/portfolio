@@ -12,17 +12,25 @@ html {
     /* main body background color */
     --background: 0 100% 100%;
     /* main body text color */
-    --foreground: 210 11% 7%;
+    --foreground: 0 0% 24%;
     /* primary button background color */
-    --primary: 142 71% 45%;
+    --primary: 353 81% 51%;
     /* primary button white text color */
     --primary-foreground: 0 100% 100%;
     /* primary button background hover */
-    --primary-hover: 142 71% 30%;
-    /* card background color */
-    --accent: 0 0% 97%;
+    --primary-hover: 353 92% 41%;
+    /* banner bg */
+    --banner: 225 40% 98%;
+    /* section 1 bg color */
+    --section-primary: 0 100% 100%;
+    /* section 2 bg color */
+    --section-secondary: 225 40% 98%;
+    /* heading color */
+    --heading: 240 9% 13%;
+    /* card background color section 1 */
+    --accent: 0 0% 96%;
     /* card text color */
-    --accent-foreground: 210 11% 7%;
+    /* --accent-foreground: 210 11% 7%; */
     /* card secondary background color */
     --destructive: 210 40% 96.1%;
     /* card secondary text color */
@@ -30,33 +38,50 @@ html {
     /* border color */
     --border: 240 6% 90%;
     /* input background color */
-    --input: 240 6% 90%;
+    /* --input: 240 6% 90%; */
     /* default link color */
-    --ring: 142 71% 45%;
+    --ring: 353 81% 51%;
     /* default link hover color */
-    --ring-foreground: 142 76% 36%;
+    /* --ring-foreground: 142 76% 36%; */
+    /* footer bg */
+    --footer: 235 100% 2%;
   }
 
   .dark {
+    /* base background color */
     --background: 210 11% 7%;
-    --foreground: 0 100% 100%;
-    --primary: 142 71% 45%;
-    /* primary button green text color */
-    --primary-foreground: 143 80% 10%;
-    --primary-hover: 142 71% 30%;
-    /* --accent: 0 1% 15%; */
-    --accent: 201 12% 15%;
-    --accent-foreground: 0 100% 100%;
+    /* base text color */
+    --foreground: 230 10% 83%;
+    /* primary background color */
+    --primary: 353 81% 51%;
+    /* primary button text color */
+    --primary-foreground: 0 100% 100%;
+    /* primary button background hover */
+    --primary-hover: 353 92% 41%;
+    /* banner bg - sme as body bg */
+    --banner: 210 11% 7%;
+    /* section 1 bg color */
+    --section-primary: 0 0 10%;
+    /* section 2 bg color */
+    --section-secondary: 0 0 6%;
+    /* heading color */
+    --heading: 0 0% 100%;
+
+    /* --section 1 card background */
+    --accent: 0 0% 10%;
+    /* --accent-foreground: 0 100% 100%; */
     /* card secondary background color */
     --destructive: 218 17% 18%;
     /* card secondary text color */
-    --destructive-foreground: 0 100% 100%;
+    /* --destructive-foreground: 0 100% 100%; */
     --border: 240 4% 24%;
-    --input: 240 4% 24%;
+    /* --input: 240 4% 24%; */
     /* default link color */
-    --ring: 142 71% 45%;
+    --ring: 353 81% 51%;
     /* default link hover color */
-    --ring-foreground: 142 76% 36%;
+    /* --ring-foreground: 142 76% 36%; */
+    /* footer bg */
+    --footer: 235 100% 2%;
   }
 }
 
@@ -75,8 +100,12 @@ html {
     padding: 0 1.5rem;
   }
 
-  .btn-primary {
-    @apply bg-primary uppercase border-2 px-4 py-6 border-primary text-primary-foreground font-medium tracking-[0.1rem] hover:bg-primary-hover hover:border-primary-hover transition-colors;
+  .btn {
+    @apply border capitalize px-6 py-4;
+  }
+
+  .primary-button {
+    @apply relative hover:before:bg-primary relative h-[50px] overflow-hidden border-primary px-3 text-ring transition-all before:absolute before:bottom-0 before:left-0 bg-background/85 before:top-0 before:z-0 before:w-0 before:bg-primary before:transition-all before:duration-500 hover:text-white hover:before:w-full font-robotoCondensed uppercase font-medium;
   }
 }
 
@@ -84,12 +113,6 @@ html {
   animation: morph 8s ease-in-out infinite 1s;
   background-blend-mode: multiply;
   box-shadow: inset 0px 0px 0px 9px rgba(255, 255, 255, 0.2);
-}
-
-.svg-path {
-  clip-path: polygon(0 84%, 100% 52%, 100% 100%, 0 100%);
-  background: var(--accent);
-  height: 300px;
 }
 
 @keyframes morph {

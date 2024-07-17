@@ -18,12 +18,13 @@ const config: Config = {
         '4xl': ['9.6rem', '10.6rem'],
       },
       fontFamily: {
-        roboto: ['var(--font-roboto)'],
+        robotoCondensed: ['var(--font-robotoCondensed)'],
         pacifico: ['var(--font-pacifico)'],
+        oxygen: ['var(--font-oxygen)'],
       },
       colors: {
         border: 'hsl(var(--border))',
-        input: 'hsl(var(--input))',
+        // input: 'hsl(var(--input))',
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         primary: {
@@ -31,17 +32,24 @@ const config: Config = {
           foreground: 'hsl(var(--primary-foreground))',
           hover: 'hsl(var(--primary-hover))',
         },
+        banner: 'hsl(var(--banner))',
+        heading: 'hsl(var(--heading))',
+        footer: 'hsl(var(--footer))',
+        section: {
+          primary: 'hsl(var(--section-primary))',
+          secondary: 'hsl(var(--section-secondary))',
+        },
         accent: {
           DEFAULT: 'hsl(var(--accent))',
-          foreground: 'hsl(var(--accent-foreground))',
+          // foreground: 'hsl(var(--accent-foreground))',
         },
         destructive: {
           DEFAULT: 'hsl(var(--destructive))',
-          foreground: 'hsl(var(--destructive-foreground))',
+          // foreground: 'hsl(var(--destructive-foreground))',
         },
         ring: {
           DEFAULT: 'hsl(var(--ring))',
-          foreground: 'hsl(var(--ring-foreground))',
+          // foreground: 'hsl(var(--ring-foreground))',
         },
       },
       transitionDuration: {
@@ -52,6 +60,7 @@ const config: Config = {
       },
       backgroundImage: {
         avatarUrl: "url('../assets/images/avatar1.jpg')",
+        noise: "url('../assets/images/noise.png')",
       },
     },
   },

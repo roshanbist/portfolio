@@ -45,3 +45,33 @@ https://shanereact.ibthemespro.com/home-four
 - get the shape and convert to svg and change the color accordingly to theme with fill option
 
 shadow 1 : 0px 4px 8px 0px rgba(0,0,0,0.08)
+
+=============== new style =================
+
+main body bg - for light and dark same
+primary button link color - #e71d36
+footer color same as section 1 of dark theme for text (for light and dark)
+
+- light
+
+banner bg: #f8f9fc
+section 1 bg: #FFFEFE --> text color #717173 heading color -> #1f1f25
+section 2 bg: #f8f9fc -> heading color same as section 1, text also same
+card 1 bg #f6f6f6 heading color same as sec 1 text also same
+card 2 bg
+
+input border -> white border with opacity of 0.1, text same as section 1
+--about me ko image ko box shadow 0 25px 65px rgba(0,0,0,.1)
+footer bg #00010c
+
+- dark
+  normal text color is section 1 text color normal heading color is white
+  banner bg: same as body bg for dark (for now)
+  section 1 bg: #191919 -> text color #c6c9d8 / 75 opacity pani add gara exactly this rgb(198 201 216 / 75%) -> CONVERT GARDA ESTO AAYO D5D6E3 , heading color -> white
+  section 2 bg: #101010 -> text and heading same as section 1
+  card 1 bg #191919 heading same and text also
+  card 2 bg
+
+input border -> white border with opacity of 0.2, text same as section 1
+--about me ko image ko box shadow no box shadow
+footer bg : #101010 or leave it as light which is 00010c

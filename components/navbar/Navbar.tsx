@@ -63,7 +63,7 @@ const Navbar = () => {
         {isMobileNav ? <LuX /> : <LuAlignRight />}
       </span>
       <div
-        className={`max-md:fixed max-md:h-svh w-full left-0 max-md:top-[8.1rem]  max-md:bg-background ${
+        className={`max-md:fixed max-md:h-svh w-full left-0 max-md:top-[8rem]  max-md:bg-background ${
           isMobileNav ? 'translate-x-0' : 'max-md:translate-x-full'
         } ${isMobileView ? 'transition-transform' : ''}`}
       >
@@ -72,7 +72,7 @@ const Navbar = () => {
             <li key={menu.label} className='md:mx-[1.2rem] max-md:border-b'>
               <Link
                 href={`${menu.path}`}
-                className={`relative font-medium uppercase max-md:block max-md:py-[1.2rem] max-md:px-8 max-md:hover:bg-primary md:hover:text-primary transition-colors group ${
+                className={`font-robotoCondensed relative font-medium uppercase max-md:block max-md:py-[1.2rem] max-md:px-8 max-md:hover:bg-primary md:hover:text-primary transition-colors group ${
                   pagePath === menu.path
                     ? 'max-md:bg-primary md:text-primary'
                     : ''

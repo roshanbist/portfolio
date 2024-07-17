@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Roboto, Pacifico } from 'next/font/google';
+import { Roboto_Condensed, Pacifico, Oxygen } from 'next/font/google';
 // import { Pacifico } from 'next/font/google';
 
 // Theme provider
@@ -7,10 +7,11 @@ import ThemeProvider from '@/components/themeProvider/ThemeProvider';
 import './globals.css';
 import Scroll from '@/util/Scroll';
 
-const roboto = Roboto({
+const robotoCondensed = Roboto_Condensed({
   subsets: ['latin'],
   weight: ['400', '500', '700'],
-  variable: '--font-roboto',
+  style: ['normal', 'italic'],
+  variable: '--font-robotoCondensed',
 });
 
 const pacifico = Pacifico({
@@ -18,6 +19,13 @@ const pacifico = Pacifico({
   weight: ['400'],
   display: 'swap',
   variable: '--font-pacifico',
+});
+
+const oxygen = Oxygen({
+  subsets: ['latin'],
+  weight: ['400'],
+  display: 'swap',
+  variable: '--font-oxygen',
 });
 
 export const metadata: Metadata = {
@@ -33,7 +41,9 @@ export default function RootLayout({
   return (
     <html lang='en' suppressHydrationWarning>
       <Scroll />
-      <body className={`${roboto.variable} ${pacifico.variable} font-roboto`}>
+      <body
+        className={`${robotoCondensed.variable} ${pacifico.variable} ${oxygen.variable} font-oxygen`}
+      >
         <ThemeProvider
           attribute='class'
           defaultTheme='system'

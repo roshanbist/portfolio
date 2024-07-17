@@ -33,11 +33,11 @@ const Header = () => {
 
   return (
     <header
-      className={`z-[100] py-[1rem] md:py-[1.5rem] fixed top-0 w-full bg-background/80 backdrop-blur-sm transition-transform duration-[500ms] ${
+      className={`z-[100] py-[1rem] md:py-[1.5rem] fixed top-0 w-full bg-background/50 backdrop-blur-sm transition-transform duration-[500ms] ${
         isHeader === 'hide'
           ? '-translate-y-[10rem]'
           : isHeader === 'show'
-          ? 'translate-y-0 border-b shadow-sm border-border/35'
+          ? 'translate-y-0 border-b shadow-sm border-border/40'
           : ''
       }`}
     >

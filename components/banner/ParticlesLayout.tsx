@@ -4,11 +4,15 @@ import { useCallback } from 'react';
 import type { Container, Engine } from 'tsparticles-engine';
 import Particles from 'react-tsparticles';
 import { loadSlim } from 'tsparticles-slim';
+import { useTheme } from 'next-themes';
 
 const ParticlesLayout = () => {
+  const { theme } = useTheme();
   const particlesInit = useCallback(async (engine: Engine) => {
     await loadSlim(engine);
   }, []);
+
+  const particleColor = theme === 'light' ? '#717173' : '#f1f5f9';
 
   return (
     <div className='absolute left-0 w-full top-0 h-full z-[-1]'>
@@ -48,13 +52,13 @@ const ParticlesLayout = () => {
           },
           particles: {
             color: {
-              value: '#21c45d',
+              value: particleColor,
             },
             links: {
-              color: '#21c45d',
+              color: particleColor,
               distance: 120,
               enable: true,
-              opacity: 0.3,
+              opacity: 0.25,
               width: 1,
             },
             move: {
@@ -75,7 +79,7 @@ const ParticlesLayout = () => {
               value: 60,
             },
             opacity: {
-              value: 0.3,
+              value: 0.25,
             },
             shape: {
               type: 'circle',
