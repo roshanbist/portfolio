@@ -10,9 +10,9 @@ const config: Config = {
     extend: {
       fontSize: {
         sm: ['1.4rem', '1.8rem'],
-        base: ['1.6rem', '2rem'],
-        lg: ['2rem', '2.4rem'],
-        xl: ['2.4rem', '2.9rem'],
+        base: ['1.6rem', '2.4rem'],
+        lg: ['2rem', '2.8rem'],
+        xl: ['2.4rem', '3rem'],
         '2xl': ['3rem', '3.5rem'],
         '3xl': ['4.8rem', '5.8rem'],
         '4xl': ['9.6rem', '10.6rem'],
@@ -57,6 +57,7 @@ const config: Config = {
       },
       boxShadow: {
         sm: '0rem 0.4rem 0.8rem 0rem rgba(0,0,0,0.05)',
+        md: '0 0 2.1rem rgba(0, 0, 0, .3)',
       },
       backgroundImage: {
         avatarUrl: "url('../assets/images/avatar1.jpg')",

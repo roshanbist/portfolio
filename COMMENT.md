@@ -75,3 +75,6 @@ footer bg #00010c
 input border -> white border with opacity of 0.2, text same as section 1
 --about me ko image ko box shadow no box shadow
 footer bg : #101010 or leave it as light which is 00010c
+
+===========================new parallax==========================
+photography ko rakhda euta parallax pani rakhna sakchu like info - check this link https://www.youtube.com/watch?v=CHGHuF24Cjw&list=PLsIi78sJEKfnUvE0qjJRNMNDdCSPx_bJQ&index=15&t=16s "what we do" vanne section
