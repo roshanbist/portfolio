@@ -105,7 +105,7 @@ html {
   }
 
   .primary-button {
-    @apply relative hover:before:bg-primary relative h-[50px] overflow-hidden border-primary px-3 text-ring transition-all before:absolute before:bottom-0 before:left-0 bg-background/85 before:top-0 before:z-0 before:w-0 before:bg-primary before:transition-all before:duration-500 hover:text-white hover:before:w-full font-robotoCondensed uppercase font-medium;
+    @apply relative hover:before:bg-primary h-[50px] min-w-[15rem] overflow-hidden border-primary px-3 text-ring transition-all before:absolute before:bottom-0 before:left-0 bg-background/85 before:top-0 before:z-0 before:w-0 before:bg-primary before:transition-all before:duration-500 hover:text-white hover:before:w-full font-robotoCondensed uppercase font-medium;
   }
 }
 
