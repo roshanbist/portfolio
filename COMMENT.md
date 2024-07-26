@@ -78,3 +78,6 @@ footer bg : #101010 or leave it as light which is 00010c
 
 ===========================new parallax==========================
 photography ko rakhda euta parallax pani rakhna sakchu like info - check this link https://www.youtube.com/watch?v=CHGHuF24Cjw&list=PLsIi78sJEKfnUvE0qjJRNMNDdCSPx_bJQ&index=15&t=16s "what we do" vanne section
+
+====== contact section ==
+we can make contact section like this contact us https://rainbowit.net/themes/trydo/corporate-business/

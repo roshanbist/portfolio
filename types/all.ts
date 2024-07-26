@@ -10,3 +10,13 @@ export type Contact = {
   icon: IconType;
   title: string;
 };
+
+export type Skill = {
+  name: string;
+  proficiency: number;
+};
+
+export type Skillset = {
+  title: string;
+  skills: Skill[];
+};

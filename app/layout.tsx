@@ -1,11 +1,10 @@
 import type { Metadata } from 'next';
 import { Roboto_Condensed, Pacifico, Oxygen } from 'next/font/google';
-// import { Pacifico } from 'next/font/google';
 
 // Theme provider
 import ThemeProvider from '@/components/themeProvider/ThemeProvider';
-import './globals.css';
 import Scroll from '@/util/Scroll';
+import './globals.css';
 
 const robotoCondensed = Roboto_Condensed({
   subsets: ['latin'],
@@ -23,13 +22,13 @@ const pacifico = Pacifico({
 
 const oxygen = Oxygen({
   subsets: ['latin'],
-  weight: ['400'],
+  weight: ['400', '700'],
   display: 'swap',
   variable: '--font-oxygen',
 });
 
 export const metadata: Metadata = {
-  title: "Roshan's Portfolio",
+  title: 'Roshan Bist',
   description: 'Portfolio website using Next JS ',
 };
 
