@@ -8,20 +8,18 @@ const About = () => {
   return (
     <section
       id='about'
-      className='bg-section-primary pt-[10rem] pb-[16rem] relative'
+      className='bg-section-primary pt-[5rem] md:pt-[10rem] pb-[12rem] md:pb-[16rem] relative'
     >
-      {/* <div className='absolute left-0 top-0 w-full hidden md:block [clip-path:polygon(0_80%,_100%_0%,_100%_100%,_0%_100%)] h-[20rem] bg-section-primary' /> */}
       <div className='max-container'>
         <div className='flex flex-wrap justify-between'>
-          <div className='mt-[4rem] relative z-10 shadow-md after:absolute after:border-2 after:border-border after:right-[-4rem] after:bottom-[-4rem] after:w-full after:h-full after:z-[-1] after:rounded-br-[3rem] max-w-[35rem] w-full h-[47rem]'>
+          <div className='relative z-10 shadow-md after:absolute after:border-2 after:border-border after:right-[-3rem] lg:after:right-[-4rem] after:bottom-[-3rem] lg:after:bottom-[-4rem] after:w-full after:h-full after:z-[-1] after:rounded-br-[3rem] max-w-[25rem] lg:max-w-[35rem] w-full h-[37rem] lg:h-[47rem] max-md:mx-auto max-md:mb-[7rem] md:mr-[5rem]'>
             <Image
               src={profileImage}
               alt='image description'
               className='w-full h-full rounded-[0.4rem] object-cover absolute left-0 top-0'
             />
           </div>
-
-          <div className='about-content flex-1 max-w-[60%]'>
+          <div className='about-content md:flex-1 lg:max-w-[60%] pb-4 md:pl-8 xl:pl-0'>
             <SectionHeading heading='about me' />
             <p className='mb-8 text-justify'>
               <b>Hello!</b> I&apos;m Roshan, an aspiring{' '}

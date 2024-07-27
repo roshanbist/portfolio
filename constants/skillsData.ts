@@ -1,6 +1,6 @@
 import { Skillset } from '@/types/all';
 
-export const skillsList: Skillset[] = [
+export const skillsData: Skillset[] = [
   {
     title: 'Frontend Development',
     skills: [
