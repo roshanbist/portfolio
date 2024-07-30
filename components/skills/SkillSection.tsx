@@ -22,7 +22,7 @@ const SkillSection = () => {
               className={`text-xl font-robotoCondensed font-medium p-6 w-full relative overflow-hidden z-[1] transition-colors duration-500 focus:outline-none after:absolute after:top-0 after:bottom-0 after:left-0 hover:after:w-full hover:text-[#ecedf0] after:transition-all after:bg-primary after:z-[-1] after:duration-500 ${
                 selectedTab === index
                   ? 'after:w-full text-[#ecedf0]'
-                  : 'after:w-[0.2rem]'
+                  : 'after:w-0'
               }`}
               ref={index === 0 ? btnRef : null}
               onClick={() => setSelectedTab(index)}

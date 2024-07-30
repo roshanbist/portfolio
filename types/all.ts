@@ -20,3 +20,19 @@ export type Skillset = {
   title: string;
   skills: Skill[];
 };
+
+export type EducationType = {
+  startDate: string;
+  endDate: string;
+  degree: string;
+  instituition: string;
+  address: string;
+};
+
+export type ExperienceType = {
+  startDate: string;
+  endDate: string;
+  company: string;
+  jobPosition: string;
+  address: string;
+};

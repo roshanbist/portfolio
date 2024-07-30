@@ -13,17 +13,6 @@ const HomePage = () => {
       <div className='max-container w-full'>
         <Banner />
       </div>
-
-      {/* <div className='absolute left-0 bottom-0 w-full hidden md:block [clip-path:polygon(0_43%,_100%_0%,_100%_100%,_0%_100%)] h-[20rem] bg-accent'>
-      </div> */}
-      {/* <svg
-          x='0px'
-          y='0px'
-          className='fill-accent'
-          viewBox='0 186.5 1920 113.5'
-        >
-          <polygon points='0,300 655.167,210.5 1432.5,300 1920,198.5 1920,300 '></polygon>
-        </svg> */}
     </section>
   );
 };

@@ -98,7 +98,7 @@ export const skillsData: Skillset[] = [
       },
       {
         name: 'Git',
-        proficiency: 100,
+        proficiency: 90,
       },
       {
         name: 'Jira',
