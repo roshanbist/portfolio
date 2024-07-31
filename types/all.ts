@@ -1,3 +1,4 @@
+import { StaticImageData } from 'next/image';
 import { IconType } from 'react-icons';
 
 export type MenuItem = {
@@ -35,4 +36,13 @@ export type ExperienceType = {
   company: string;
   jobPosition: string;
   address: string;
+};
+
+export type ProjectsType = {
+  title: string;
+  thumbnail: StaticImageData;
+  githubLink: string;
+  demoLink: string;
+  description: string;
+  tagClouds: string[];
 };

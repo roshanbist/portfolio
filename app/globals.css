@@ -109,6 +109,10 @@ html {
   }
 }
 
+.translateZ-0 {
+  transform: translateZ(0);
+}
+
 .avatar-img {
   animation: morph 8s ease-in-out infinite 1s;
   background-blend-mode: multiply;

@@ -11,7 +11,9 @@ const AboutIntro = () => {
         <Image
           src={profileImage}
           alt='image description'
-          className='w-full h-full rounded-[0.4rem] object-cover absolute left-0 top-0'
+          fill
+          sizes='100%'
+          className='rounded-[0.4rem] object-cover'
         />
       </div>
       <div className='about-content md:flex-1 lg:max-w-[60%] pb-4 md:pl-8 xl:pl-0'>
