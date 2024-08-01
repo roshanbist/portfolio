@@ -1,5 +1,5 @@
-import AboutIntro from '@/components/aboutIntro/AboutIntro';
-import Experience from '@/components/experience/Experience';
+import AboutIntro from '@/components/aboutSection/AboutIntro';
+import Experience from '@/components/aboutSection/Experience';
 
 const About = () => {
   return (

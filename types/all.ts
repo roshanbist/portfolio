@@ -6,7 +6,14 @@ export type MenuItem = {
   path: string;
 };
 
-export type Contact = {
+export type LogoInfo = {
+  width: string;
+  height: string;
+  textSize: string;
+  classname?: string;
+};
+
+export type SocialMediaDataType = {
   link: string;
   icon: IconType;
   title: string;

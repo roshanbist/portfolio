@@ -40,7 +40,7 @@ html {
     /* input background color */
     /* --input: 240 6% 90%; */
     /* default link color */
-    --ring: 353 81% 51%;
+    --link: 353 81% 51%;
     /* default link hover color */
     /* --ring-foreground: 142 76% 36%; */
     /* footer bg */
@@ -75,9 +75,10 @@ html {
     /* card secondary text color */
     /* --destructive-foreground: 0 100% 100%; */
     --border: 240 4% 24%;
+    /* input background color */
     /* --input: 240 4% 24%; */
     /* default link color */
-    --ring: 353 81% 51%;
+    --link: 353 81% 51%;
     /* default link hover color */
     /* --ring-foreground: 142 76% 36%; */
     /* footer bg */
@@ -105,7 +106,11 @@ html {
   }
 
   .primary-button {
-    @apply relative hover:before:bg-primary h-[50px] min-w-[15rem] overflow-hidden border-primary px-3 text-ring transition-all before:absolute before:bottom-0 before:left-0 bg-background/85 before:top-0 before:z-0 before:w-0 before:bg-primary before:transition-all before:duration-500 hover:text-white hover:before:w-full font-robotoCondensed uppercase font-medium;
+    @apply relative hover:before:bg-primary h-[50px] min-w-[15rem] overflow-hidden border-primary px-3 text-link transition-all before:absolute before:bottom-0 before:left-0 bg-background/85 before:top-0 before:z-0 before:w-0 before:bg-primary before:transition-all before:duration-500 hover:text-white hover:before:w-full font-robotoCondensed uppercase font-medium;
+  }
+
+  .form-input {
+    @apply px-[1.5rem] py-[1.2rem] h-[5rem] w-full rounded-[0.5rem] block focus:outline-none border border-border;
   }
 }
 
@@ -117,6 +122,10 @@ html {
   animation: morph 8s ease-in-out infinite 1s;
   background-blend-mode: multiply;
   box-shadow: inset 0px 0px 0px 9px rgba(255, 255, 255, 0.2);
+}
+
+.bg-parallax {
+  background: linear-gradient(to bottom, #e5e5be 0%, #04596e 100%);
 }
 
 @keyframes morph {

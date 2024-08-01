@@ -47,8 +47,8 @@ const config: Config = {
           DEFAULT: 'hsl(var(--destructive))',
           // foreground: 'hsl(var(--destructive-foreground))',
         },
-        ring: {
-          DEFAULT: 'hsl(var(--ring))',
+        link: {
+          DEFAULT: 'hsl(var(--link))',
           // foreground: 'hsl(var(--ring-foreground))',
         },
       },
@@ -60,7 +60,9 @@ const config: Config = {
         md: '0 0 2.1rem rgba(0, 0, 0, .3)',
       },
       backgroundImage: {
-        avatarUrl: "url('../assets/images/avatar1.jpg')",
+        avatar1: "url('../assets/images/avatar1.jpg')",
+        avatar2: "url('../assets/images/avatar2.jpeg')",
+        parallax1: "url('../assets/images/stoneStack.jpg')",
         noise: "url('../assets/images/noise.png')",
       },
     },

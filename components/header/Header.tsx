@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import ThemeToggle from '../themeToggle/ThemeToggle';
 import Navbar from '../navbar/Navbar';
 import Link from 'next/link';
+import Logo from '../logo/logo';
 
 const Header = () => {
   const [isHeader, setIsHeader] = useState<string | null>(null);
@@ -42,9 +43,12 @@ const Header = () => {
       }`}
     >
       <div className='max-container flex flex-wrap justify-between items-center'>
-        <div className='logo w-[6rem] h-[6rem] text-[2.5rem] rounded-full bg-primary text-primary-foreground font-pacifico flex flex-wrap justify-center items-center mr-[1rem]'>
-          <Link href='/'>RB</Link>
-        </div>
+        <Logo
+          width='w-[6rem]'
+          height='h-[6rem]'
+          textSize='text-[2.5rem]'
+          classname='mr-[1rem]'
+        />
         <div className='flex flex-wrap flex-1 justify-end items-center'>
           <Navbar />
           <ThemeToggle />
