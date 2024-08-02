@@ -1,9 +1,11 @@
 import Logo from '../logo/logo';
+import ScrollToTop from '../scrollToTop/scrollToTop';
 import SocialMediaConnect from '../socialMediaConnect/SocialMediaConnect';
 
 const Footer = () => {
   return (
     <footer className='pt-[5rem] md:pt-[8rem] pb-[5rem] bg-[#101214]'>
+      <ScrollToTop />
       <div className='max-container'>
         <div>
           <Logo
