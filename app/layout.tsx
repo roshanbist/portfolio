@@ -1,5 +1,7 @@
 import type { Metadata } from 'next';
 import { Roboto_Condensed, Pacifico, Oxygen } from 'next/font/google';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 // Theme provider
 import ThemeProvider from '@/components/themeProvider/ThemeProvider';
@@ -51,6 +53,7 @@ export default function RootLayout({
         >
           {children}
         </ThemeProvider>
+        <ToastContainer autoClose={2500} />
       </body>
     </html>
   );
