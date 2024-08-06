@@ -67,10 +67,10 @@ const ContactForm = () => {
         <div className='mb-12'>
           <textarea
             name='user_message'
-            className='form-input min-h-[15rem] h-auto max-h-[30rem]'
+            className='form-input min-h-[15rem] max-h-[30rem]'
             placeholder='Message*'
             required
-          ></textarea>
+          />
         </div>
         <button className='btn primary-button'>
           <span className='relative z-10'>Send message</span>

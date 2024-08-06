@@ -41,10 +41,10 @@ export const skillsData: Skillset[] = [
         name: 'Bootstrap',
         proficiency: 90,
       },
-      {
-        name: 'Material UI',
-        proficiency: 65,
-      },
+      // {
+      //   name: 'Material UI',
+      //   proficiency: 65,
+      // },
     ],
   },
   {

@@ -14,7 +14,7 @@ const Banner = () => {
         </h1>
         <TypewriteText />
         <button className='primary-button btn'>
-          <span className='relative z-10'>See Portfolio</span>
+          <span className='relative z-10'>Download CV</span>
         </button>
       </div>
     </div>

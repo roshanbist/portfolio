@@ -6,7 +6,7 @@ import SocialMediaConnect from '@/components/socialMediaConnect/SocialMediaConne
 
 const AboutIntro = () => {
   return (
-    <div className='flex flex-wrap justify-between pb-[10rem]'>
+    <div className='flex flex-wrap justify-between pb-[5rem] xl:pb-[10rem]'>
       <div className='relative z-10 shadow-md after:absolute after:border-2 after:border-border after:right-[-3rem] lg:after:right-[-4rem] after:bottom-[-3rem] lg:after:bottom-[-4rem] after:w-full after:h-full after:z-[-1] after:rounded-br-[3rem] max-w-[25rem] lg:max-w-[35rem] w-full h-[37rem] lg:h-[47rem] max-md:mx-auto max-md:mb-[7rem] md:mr-[5rem]'>
         <Image
           src={profileImage}
@@ -43,9 +43,9 @@ const AboutIntro = () => {
           to new projects. Let&apos;s create something amazing together!
         </p>
         <SocialMediaConnect />
-        <button className='primary-button btn'>
+        {/* <button className='primary-button btn'>
           <span className='relative z-10'>download cv</span>
-        </button>
+        </button> */}
       </div>
     </div>
   );
