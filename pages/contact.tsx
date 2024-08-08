@@ -1,7 +1,6 @@
 import ContactForm from '@/components/contactSection/ContactForm';
 import ContactParallax from '@/components/contactSection/ContactParallax';
 import SectionHeading from '@/components/sectionHeading/SectionHeading';
-import React from 'react';
 
 const Contact = () => {
   return (

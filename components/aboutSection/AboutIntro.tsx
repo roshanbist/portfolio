@@ -1,7 +1,7 @@
 import Image from 'next/image';
 
 import SectionHeading from '@/components/sectionHeading/SectionHeading';
-import profileImage from '../../assets/images/avatar1.jpg';
+import profileImage from '@/assets/images/avatar1.jpg';
 import SocialMediaConnect from '@/components/socialMediaConnect/SocialMediaConnect';
 
 const AboutIntro = () => {

@@ -5,7 +5,6 @@ import Link from 'next/link';
 import { LuAlignRight, LuX } from 'react-icons/lu';
 
 import { menuItems } from '@/constants/menuItems';
-// import { usePathname } from 'next/navigation';
 
 const Navbar = () => {
   const [isMobileNav, setIsMobileNav] = useState(false);
@@ -13,17 +12,6 @@ const Navbar = () => {
   const [activeMenuItem, setActiveMenuItem] = useState('');
   const navRef = useRef<HTMLElement | null>(null);
   const menuRefs = useRef<Array<HTMLElement | null>>([]);
-
-  // useEffect(() => {
-  //   isMobileNav
-  //     ? document.body.classList.add('nav-active')
-  //     : document.body.classList.remove('nav-active');
-
-  //   const bodyClasslist = document.body.classList;
-  //   bodyClasslist.contains('nav-active')
-  //     ? document.body.classList.add('overflow-hidden')
-  //     : document.body.classList.remove('overflow-hidden');
-  // }, [isMobileNav]);
 
   useEffect(() => {
     document.body.classList.toggle('nav-active', isMobileNav); // if isMobileNav is true then nav-active is added otherwise removed

@@ -1,5 +1,4 @@
 import { Skill } from '@/types/all';
-import React from 'react';
 
 const SkillCard = ({ skills }: { skills: Skill[] }) => {
   return (

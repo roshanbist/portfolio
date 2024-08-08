@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from 'react';
 
 import { skillsData } from '@/constants/skillsData';
-import SkillCard from './SkillCard';
+import SkillCard from '@/components/skills/SkillCard';
 
 const SkillSection = () => {
   const [selectedTab, setSelectedTab] = useState(0);

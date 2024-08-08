@@ -1,7 +1,7 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 import { projectsData } from '@/constants/projectsData';
-import Link from 'next/link';
 
 const ProjectsSection = () => {
   return (

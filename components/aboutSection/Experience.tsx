@@ -1,5 +1,4 @@
-import React from 'react';
-import SectionHeading from '../sectionHeading/SectionHeading';
+import SectionHeading from '@/components/sectionHeading/SectionHeading';
 import { FaGraduationCap, FaBriefcase } from 'react-icons/fa';
 import { educationData } from '@/constants/educationalData';
 import { experienceData } from '@/constants/experienceData';

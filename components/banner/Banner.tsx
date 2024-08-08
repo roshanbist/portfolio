@@ -1,5 +1,9 @@
-import AnimatedAvatar from './AnimatedAvatar';
-import TypewriteText from './TypewriteText';
+'use client';
+
+import { motion } from 'framer-motion';
+
+import AnimatedAvatar from '@/components/banner/AnimatedAvatar';
+import TypewriteText from '@/components/banner/TypewriteText';
 
 const Banner = () => {
   return (
