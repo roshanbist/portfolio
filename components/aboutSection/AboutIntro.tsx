@@ -19,18 +19,15 @@ const AboutIntro = () => {
       <div className='about-content md:flex-1 lg:max-w-[60%] pb-4 md:pl-8 xl:pl-0'>
         <SectionHeading heading='about me' />
         <p className='mb-8 text-justify'>
-          <b>Hello!</b> I&apos;m Roshan, an aspiring{' '}
-          <b className='text-primary'>Full-Stack developer</b> with a background
-          in photography. I recently graduated with an MSc degree in Computing
-          Sciences, specializing in{' '}
-          <b className='text-primary'>Software, Web & Cloud</b>, in June 2024
-          from Tampere University, Finland. My journey into the world of coding
-          began in 2015, when I transitioned from capturing moments with a
-          camera to developing interactive UI with code. After completing a
+          <b>Hello!</b> I&apos;m Roshan, an aspiring Full-Stack Developer with a
+          background in photography. I recently graduated with an MSc degree in
+          Computing Sciences, specializing in Software, Web & Cloud, in June
+          2024 from Tampere University, Finland. My journey into the world of
+          coding began in 2015, when I transitioned from capturing moments with
+          a camera to developing interactive UI with code. After completing a
           two-month web design course in 2015, I embarked on my professional
           journey as a Frontend Developer at Rapid Web Solution in Nepal, a
-          sister company of GetDevDone (formerly{' '}
-          <b className='text-primary'>PSD2HTML</b>). Starting as a trainee, I
+          sister company of GetDevDone (formerly P2H). Starting as a trainee, I
           honed my skills and climbed the ranks to a mid-level position over six
           years. During my tenure, I handled major projects and mentored junior
           developers, gaining invaluable experience.

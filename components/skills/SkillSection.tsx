@@ -19,7 +19,7 @@ const SkillSection = () => {
         {skillsData.map((skills, index) => (
           <li className='border-b border-foreground/10' key={skills.title}>
             <button
-              className={`text-xl font-robotoCondensed font-medium p-6 w-full relative overflow-hidden z-[1] transition-colors duration-500 focus:outline-none after:absolute after:top-0 after:bottom-0 after:left-0 hover:after:w-full hover:text-[#ecedf0] after:transition-all after:bg-primary after:z-[-1] after:duration-500 ${
+              className={`text-[1.8rem]/[1.22] font-robotoCondensed font-medium p-6 w-full relative overflow-hidden z-[1] transition-colors duration-500 focus:outline-none after:absolute after:top-0 after:bottom-0 after:left-0 hover:after:w-full hover:text-[#ecedf0] after:transition-all after:bg-primary after:z-[-1] after:duration-500 ${
                 selectedTab === index
                   ? 'after:w-full text-[#ecedf0]'
                   : 'after:w-0'
