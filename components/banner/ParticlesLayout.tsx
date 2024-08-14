@@ -1,10 +1,23 @@
 'use client';
 
 import { useCallback } from 'react';
-import type { Container, Engine } from 'tsparticles-engine';
+import type { Engine } from 'tsparticles-engine';
 import Particles from 'react-tsparticles';
 import { loadSlim } from 'tsparticles-slim';
 import { useTheme } from 'next-themes';
+import { motion } from 'framer-motion';
+
+const particlesVariant = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+
+    transition: {
+      duration: 0.5,
+      ease: [0.42, 0, 0.58, 1],
+    },
+  },
+};
 
 const ParticlesLayout = () => {
   const { theme } = useTheme();
@@ -15,7 +28,12 @@ const ParticlesLayout = () => {
   const particleColor = theme === 'light' ? '#717173' : '#f1f5f9';
 
   return (
-    <div className='absolute left-0 w-full top-0 h-full z-[-1]'>
+    <motion.div
+      className='absolute left-0 w-full top-0 h-full z-[-1]'
+      variants={particlesVariant}
+      initial='hidden'
+      animate='visible'
+    >
       <Particles
         id='tsparticles'
         init={particlesInit}
@@ -91,7 +109,7 @@ const ParticlesLayout = () => {
           detectRetina: true,
         }}
       />
-    </div>
+    </motion.div>
   );
 };
 

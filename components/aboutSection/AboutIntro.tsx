@@ -1,8 +1,24 @@
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 
 import SectionHeading from '@/components/sectionHeading/SectionHeading';
 import profileImage from '@/assets/images/avatar1.jpg';
 import SocialMediaConnect from '@/components/socialMediaConnect/SocialMediaConnect';
+
+const profileImageVariant = {
+  hidden: {
+    opacity: 0,
+    x: -50,
+  },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      duration: 0.5,
+      ease: [0.42, 0, 0.58, 1],
+    },
+  },
+};
 
 const AboutIntro = () => {
   return (

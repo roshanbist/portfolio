@@ -1,29 +1,23 @@
 'use client';
 
-import { easeInOut, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 import AnimatedAvatar from '@/components/banner/AnimatedAvatar';
 import TypewriteText from '@/components/banner/TypewriteText';
 
 const bannerParentVariant = {
-  hidden: { opacity: 0, x: -50 },
+  hidden: { opacity: 0, x: -100 },
   visible: {
     opacity: 1,
     x: 0,
     transition: {
-      // delayChildren: 0.2,
-      // staggerChildren: 0.15,
-      // ease: easeInOut,
       duration: 0.5,
-      ease: easeInOut,
+      ease: [0.42, 0, 0.58, 1],
+      // ease: easeInOut,
+      delay: 0.06,
     },
   },
 };
-
-// const bannerChildVariant = {
-//   hidden: { opacity: 0, y: -20 },
-//   visible: { opacity: 1, y: 0 },
-// };
 
 const Banner = () => {
   return (
