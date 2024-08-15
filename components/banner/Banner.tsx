@@ -1,33 +1,19 @@
 'use client';
 
-import { motion } from 'framer-motion';
+// import { motion } from 'framer-motion';
 
 import AnimatedAvatar from '@/components/banner/AnimatedAvatar';
 import TypewriteText from '@/components/banner/TypewriteText';
-
-const bannerParentVariant = {
-  hidden: { opacity: 0, x: -100 },
-  visible: {
-    opacity: 1,
-    x: 0,
-    transition: {
-      duration: 0.5,
-      ease: [0.42, 0, 0.58, 1],
-      // ease: easeInOut,
-      delay: 0.06,
-    },
-  },
-};
+import AnimatedSection from '@/components/animatedSection/AnimatedSection';
+import { bannerParentVariant } from '@/components/animatedSection/animationOption';
 
 const Banner = () => {
   return (
     <div className='max-md:text-center md:flex md:flex-wrap md:justify-between md:items-center'>
       <AnimatedAvatar />
-      <motion.div
+      <AnimatedSection
         className='md:flex-1 md:pr-4 md:order-1'
-        variants={bannerParentVariant}
-        initial='hidden'
-        animate='visible'
+        animation={bannerParentVariant}
       >
         <span className='inline-flex py-[0.6rem] px-4 mb-10 rounded-[0.3rem] tracking-[0.2rem] uppercase font-medium bg-primary text-primary-foreground font-robotoCondensed'>
           Roshan Bist
@@ -39,7 +25,7 @@ const Banner = () => {
         <button className='primary-button btn'>
           <span className='relative z-10'>Download CV</span>
         </button>
-      </motion.div>
+      </AnimatedSection>
     </div>
   );
 };

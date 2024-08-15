@@ -1,17 +1,16 @@
 'use client';
 
 import { useState, useEffect, useRef } from 'react';
-import Link from 'next/link';
-import { LuAlignRight, LuX } from 'react-icons/lu';
+import { Link } from 'react-scroll';
 
+import { LuAlignRight, LuX } from 'react-icons/lu';
 import { menuItems } from '@/constants/menuItems';
 
 const Navbar = () => {
   const [isMobileNav, setIsMobileNav] = useState(false);
   const [isMobileView, setIsMobileView] = useState(false);
-  const [activeMenuItem, setActiveMenuItem] = useState('');
+
   const navRef = useRef<HTMLElement | null>(null);
-  const menuRefs = useRef<Array<HTMLElement | null>>([]);
 
   useEffect(() => {
     document.body.classList.toggle('nav-active', isMobileNav); // if isMobileNav is true then nav-active is added otherwise removed
@@ -22,7 +21,6 @@ const Navbar = () => {
     const menuHandler = (e: Event) => {
       if (!navRef.current?.contains(e.target as Node)) {
         setIsMobileNav(false);
-        // document.body.classList.remove('nav-active');
       }
     };
 
@@ -45,41 +43,6 @@ const Navbar = () => {
     };
   }, []);
 
-  useEffect(() => {
-    // observers options
-    const observerOptions = {
-      root: null,
-      threshold: 0.2,
-    };
-
-    const sectionObserverCallback = (entries: IntersectionObserverEntry[]) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          setActiveMenuItem(entry.target.id);
-        }
-      });
-    };
-
-    // observer object
-    const sectionObserver = new IntersectionObserver(
-      sectionObserverCallback,
-      observerOptions
-    );
-
-    menuItems.forEach((menu, index) => {
-      const sectionRef = document.getElementById(menu.path);
-
-      if (sectionRef) {
-        sectionObserver.observe(sectionRef);
-        menuRefs.current[index] = sectionRef;
-      }
-    });
-
-    return () => {
-      sectionObserver.disconnect();
-    };
-  }, []);
-
   return (
     <nav ref={navRef}>
       <span
@@ -94,29 +57,20 @@ const Navbar = () => {
         } ${isMobileView ? 'transition-transform' : ''}`}
       >
         <ul className='md:flex md:flex-wrap'>
-          {menuItems.map((menu, index) => (
-            <li
-              key={menu.label}
-              className='md:mx-[1.2rem] max-md:border-b'
-              ref={(ref) => {
-                if (ref) {
-                  menuRefs.current[index] = ref;
-                }
-              }}
-            >
+          {menuItems.map((menu) => (
+            <li key={menu.label} className='md:mx-[1.2rem] max-md:border-b'>
               <Link
-                href={`#${menu.path}`}
-                className={`font-robotoCondensed relative font-medium uppercase max-md:block max-md:py-[1.2rem] max-md:px-8 max-md:hover:bg-primary md:hover:text-primary transition-colors group ${
-                  activeMenuItem === menu.path
-                    ? 'max-md:bg-primary md:text-primary'
-                    : ''
-                }`}
+                activeClass='active'
+                to={`${menu.path}`}
+                className={`cursor-pointer menu-link font-robotoCondensed relative font-medium uppercase max-md:block max-md:py-[1.2rem] max-md:px-8 max-md:hover:bg-primary md:hover:text-primary transition-colors group`}
+                spy={true}
+                smooth={true}
+                duration={500}
+                offset={-70}
               >
                 {menu.label}
                 <span
-                  className={`block mx-auto left-0 right-0 md:absolute md:bottom-[-1rem] md:w-0 md:h-[0.4rem] md:bg-primary md:transition-[width] group-hover:md:w-full ${
-                    activeMenuItem === menu.path ? 'md:w-full' : ''
-                  }`}
+                  className={`block mx-auto left-0 right-0 md:absolute md:bottom-[-1rem] md:w-0 md:h-[0.4rem] md:bg-primary md:transition-[width] group-hover:md:w-full`}
                 />
               </Link>
             </li>

@@ -23,7 +23,8 @@ const profileImageVariant = {
 const AboutIntro = () => {
   return (
     <div className='flex flex-wrap justify-between pb-[5rem] xl:pb-[10rem]'>
-      <div className='relative z-10 shadow-md after:absolute after:border-2 after:border-border after:right-[-3rem] lg:after:right-[-4rem] after:bottom-[-3rem] lg:after:bottom-[-4rem] after:w-full after:h-full after:z-[-1] after:rounded-br-[3rem] max-w-[25rem] lg:max-w-[35rem] w-full h-[37rem] lg:h-[47rem] max-md:mx-auto max-md:mb-[7rem] md:mr-[5rem]'>
+      <div className='relative z-10 shadow-md max-w-[25rem] lg:max-w-[35rem] w-full h-[37rem] lg:h-[47rem] max-md:mx-auto max-md:mb-[7rem] md:mr-[5rem]'>
+        <span className='absolute border-2 border-border right-[-3rem] lg:right-[-4rem] bottom:-[-3rem] lg:bottom-[-4rem] w-full h-full -z-[1] rounded-br-[3rem]' />
         <Image
           src={profileImage}
           alt='image description'

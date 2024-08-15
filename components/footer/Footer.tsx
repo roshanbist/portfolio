@@ -1,4 +1,4 @@
-import Logo from '@/components/logo/logo';
+import Logo from '@/components/logo/Logo';
 import ScrollToTop from '../scrollToTop/scrollToTop';
 import SocialMediaConnect from '../socialMediaConnect/SocialMediaConnect';
 

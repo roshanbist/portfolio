@@ -1,9 +1,10 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
+
 import ThemeToggle from '@/components/themeToggle/ThemeToggle';
 import Navbar from '@/components/navbar/Navbar';
-import Logo from '@/components/logo/logo';
+import Logo from '@/components/logo/Logo';
 
 const Header = () => {
   const [isHeader, setIsHeader] = useState<string | null>(null);

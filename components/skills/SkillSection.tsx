@@ -1,17 +1,12 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useState } from 'react';
 
 import { skillsData } from '@/constants/skillsData';
 import SkillCard from '@/components/skills/SkillCard';
 
 const SkillSection = () => {
   const [selectedTab, setSelectedTab] = useState(0);
-  const btnRef = useRef<HTMLButtonElement | null>(null);
-
-  useEffect(() => {
-    btnRef.current?.focus();
-  }, []);
 
   return (
     <div className='md:flex md:flex-wrap md:gap-[4rem]'>
@@ -24,7 +19,6 @@ const SkillSection = () => {
                   ? 'after:w-full text-[#ecedf0]'
                   : 'after:w-0'
               }`}
-              ref={index === 0 ? btnRef : null}
               onClick={() => setSelectedTab(index)}
             >
               {skills.title}

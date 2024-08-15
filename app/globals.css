@@ -5,6 +5,7 @@
 html {
   /* 1rem = 10px */
   font-size: 62.5%;
+  /* scroll-behavior: smooth; */
 }
 
 @layer base {
@@ -111,6 +112,14 @@ html {
 
   .form-input {
     @apply px-[1.5rem] py-[1.2rem] h-[5rem] w-full rounded-[0.5rem] block focus:outline-none border border-border;
+  }
+
+  .menu-link.active {
+    @apply max-md:bg-primary md:text-primary;
+  }
+
+  .menu-link.active span {
+    @apply md:w-full;
   }
 }
 

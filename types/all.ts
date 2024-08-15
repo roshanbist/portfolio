@@ -53,3 +53,9 @@ export type ProjectsType = {
   description: string;
   tagClouds: string[];
 };
+
+export type AnimatedSectionType = {
+  children: React.ReactNode;
+  className: string;
+  animation: any;
+};

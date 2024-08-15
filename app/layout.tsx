@@ -5,7 +5,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 // Theme provider
 import ThemeProvider from '@/components/themeProvider/ThemeProvider';
-import Scroll from '@/util/Scroll';
+// import Scroll from '@/util/Scroll';
 import './globals.css';
 
 const robotoCondensed = Roboto_Condensed({
@@ -41,7 +41,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en' suppressHydrationWarning>
-      <Scroll />
+      {/* <Scroll /> */}
       <body
         className={`${robotoCondensed.variable} ${pacifico.variable} ${oxygen.variable} font-oxygen`}
       >
