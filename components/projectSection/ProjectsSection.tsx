@@ -1,15 +1,35 @@
+'use client';
+
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 import Link from 'next/link';
 
 import { projectsData } from '@/constants/projectsData';
+import AnimatedSection from '@/components/animatedSection/AnimatedSection';
+import {
+  // fadeInBottom,
+  fadeInBottomChildren,
+  fadeInBottomParent,
+  // fadeInBottomStaggered,
+} from '@/components/animatedSection/animationOption';
 
 const ProjectsSection = () => {
   return (
-    <div className='sm:grid sm:grid-cols-2 lg:grid-cols-3 sm:gap-8 md:gap-16 pt-[3rem]'>
+    <AnimatedSection
+      className='sm:grid sm:grid-cols-2 lg:grid-cols-3 sm:gap-8 md:gap-16 pt-[3rem]'
+      animation={fadeInBottomParent}
+    >
+      {/* <div className='sm:grid sm:grid-cols-2 lg:grid-cols-3 sm:gap-8 md:gap-16 pt-[3rem]'> */}
       {projectsData.map((project) => (
-        <div
+        // <AnimatedSection
+        //   animation={fadeInBottom}
+        //   key={project.title}
+        //   className='cursor-pointer group max-sm:mb-[3rem]'
+        // >
+        <motion.div
           key={project.title}
           className='cursor-pointer group max-sm:mb-[3rem]'
+          variants={fadeInBottomChildren}
         >
           <div className='w-full h-[35rem] sm:h-[40rem] md:h-[50rem] overflow-hidden relative border border-border/60 rounded-[0.6rem] z-[1]'>
             <span className='absolute top-0 left-0 w-full h-full mix-blend-multiply bg-gray-800/40 z-[1]' />
@@ -47,9 +67,10 @@ const ProjectsSection = () => {
               </ul>
             </div>
           </div>
-        </div>
+        </motion.div>
       ))}
-    </div>
+      {/* </div> */}
+    </AnimatedSection>
   );
 };
 

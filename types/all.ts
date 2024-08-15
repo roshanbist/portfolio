@@ -55,7 +55,7 @@ export type ProjectsType = {
 };
 
 export type AnimatedSectionType = {
-  children: React.ReactNode;
-  className: string;
+  children?: React.ReactNode;
+  className?: string;
   animation: any;
 };

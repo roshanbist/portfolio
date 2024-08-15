@@ -14,8 +14,6 @@ const ScrollToTop = () => {
       if (aboutSection) {
         const aboutSectionTop = aboutSection.getBoundingClientRect().top;
 
-        console.log(aboutSectionTop);
-
         return aboutSectionTop < 100
           ? setIsScrollToTop(true)
           : setIsScrollToTop(false);

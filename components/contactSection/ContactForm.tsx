@@ -3,6 +3,12 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { toast } from 'react-toastify';
+import { motion } from 'framer-motion';
+
+import {
+  fadeInBottomChildren,
+  fadeInLeft,
+} from '@/components/animatedSection/animationOption';
 
 const ContactForm = () => {
   const formRef = useRef<HTMLFormElement | null>(null);
@@ -46,7 +52,7 @@ const ContactForm = () => {
   return (
     <div>
       <form ref={formRef} onSubmit={sendEmail}>
-        <div className='mb-12'>
+        <motion.div className='mb-12' variants={fadeInBottomChildren}>
           <input
             type='text'
             name='user_name'
@@ -54,8 +60,8 @@ const ContactForm = () => {
             placeholder='Name*'
             required
           />
-        </div>
-        <div className='mb-12'>
+        </motion.div>
+        <motion.div className='mb-12' variants={fadeInBottomChildren}>
           <input
             type='email'
             name='user_email'
@@ -63,18 +69,21 @@ const ContactForm = () => {
             placeholder='Email*'
             required
           />
-        </div>
-        <div className='mb-12'>
+        </motion.div>
+        <motion.div className='mb-12' variants={fadeInBottomChildren}>
           <textarea
             name='user_message'
             className='form-input min-h-[15rem] max-h-[30rem]'
             placeholder='Message*'
             required
           />
-        </div>
-        <button className='btn primary-button'>
+        </motion.div>
+        <motion.button
+          className='btn primary-button'
+          variants={fadeInBottomChildren}
+        >
           <span className='relative z-10'>Send message</span>
-        </button>
+        </motion.button>
       </form>
     </div>
   );
