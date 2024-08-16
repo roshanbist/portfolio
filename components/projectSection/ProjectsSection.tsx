@@ -9,7 +9,7 @@ import AnimatedSection from '@/components/animatedSection/AnimatedSection';
 import {
   // fadeInBottom,
   fadeInBottomChildren,
-  fadeInBottomParent,
+  fadeInParent,
   // fadeInBottomStaggered,
 } from '@/components/animatedSection/animationOption';
 
@@ -17,7 +17,7 @@ const ProjectsSection = () => {
   return (
     <AnimatedSection
       className='sm:grid sm:grid-cols-2 lg:grid-cols-3 sm:gap-8 md:gap-16 pt-[3rem]'
-      animation={fadeInBottomParent}
+      animation={fadeInParent}
     >
       {/* <div className='sm:grid sm:grid-cols-2 lg:grid-cols-3 sm:gap-8 md:gap-16 pt-[3rem]'> */}
       {projectsData.map((project) => (

@@ -6,8 +6,8 @@ import { toast } from 'react-toastify';
 import { motion } from 'framer-motion';
 
 import {
-  fadeInLeftChildren,
-  // fadeInLeftChildren,
+  fadeInLeft,
+  // fadeInLeft,
 } from '@/components/animatedSection/animationOption';
 
 const ContactForm = () => {
@@ -52,7 +52,7 @@ const ContactForm = () => {
   return (
     <div>
       <form ref={formRef} onSubmit={sendEmail}>
-        <motion.div className='mb-12' variants={fadeInLeftChildren}>
+        <motion.div className='mb-12' variants={fadeInLeft}>
           <input
             type='text'
             name='user_name'
@@ -61,7 +61,7 @@ const ContactForm = () => {
             required
           />
         </motion.div>
-        <motion.div className='mb-12' variants={fadeInLeftChildren}>
+        <motion.div className='mb-12' variants={fadeInLeft}>
           <input
             type='email'
             name='user_email'
@@ -70,7 +70,7 @@ const ContactForm = () => {
             required
           />
         </motion.div>
-        <motion.div className='mb-12' variants={fadeInLeftChildren}>
+        <motion.div className='mb-12' variants={fadeInLeft}>
           <textarea
             name='user_message'
             className='form-input min-h-[15rem] max-h-[30rem]'
@@ -78,7 +78,7 @@ const ContactForm = () => {
             required
           />
         </motion.div>
-        <motion.div variants={fadeInLeftChildren}>
+        <motion.div variants={fadeInLeft}>
           <button className='btn primary-button'>
             <span className='relative z-10'>Send message</span>
           </button>

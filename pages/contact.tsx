@@ -1,7 +1,7 @@
 'use client';
 
 import AnimatedSection from '@/components/animatedSection/AnimatedSection';
-import { fadeInBottomParent } from '@/components/animatedSection/animationOption';
+import { fadeInParent } from '@/components/animatedSection/animationOption';
 import ContactForm from '@/components/contactSection/ContactForm';
 import ContactParallax from '@/components/contactSection/ContactParallax';
 import SectionHeading from '@/components/sectionHeading/SectionHeading';
@@ -15,7 +15,7 @@ const Contact = () => {
       <ContactParallax />
       <AnimatedSection
         className='max-container pt-[3rem]'
-        animation={fadeInBottomParent}
+        animation={fadeInParent}
       >
         {/* <div className='max-container pt-[3rem]'> */}
         <div className='md:max-w-[50%]'>

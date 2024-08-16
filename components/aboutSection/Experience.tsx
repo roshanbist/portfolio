@@ -8,7 +8,7 @@ import { educationData } from '@/constants/educationalData';
 import { experienceData } from '@/constants/experienceData';
 import {
   fadeInBottomChildren,
-  fadeInBottomParent,
+  fadeInParent,
   fullHeightVariant,
   zoomInParent,
   zoomInTop,
@@ -19,7 +19,7 @@ const Experience = () => {
   return (
     <AnimatedSection animation={zoomInParent}>
       <div className='bg-section-secondary relative p-[2.5rem] md:p-[3.5rem] lg:p-[5rem] sm:grid sm:grid-cols-2 sm:gap-10 rounded-[1rem] md:rounded-[2rem] mb-[5rem]'>
-        <AnimatedSection animation={fadeInBottomParent}>
+        <AnimatedSection animation={fadeInParent}>
           <div className='md:pr-1rem max-md:pb-[3rem]'>
             <SectionHeading heading='Education' />
             {educationData.map((data) => (
@@ -54,7 +54,7 @@ const Experience = () => {
             ))}
           </div>
         </AnimatedSection>
-        <AnimatedSection animation={fadeInBottomParent}>
+        <AnimatedSection animation={fadeInParent}>
           <div className='md:ml-[3.5rem]'>
             <SectionHeading heading='Experience' />
             {/* <div className='relative'> */}

@@ -7,7 +7,7 @@ import ScrollToTop from '@/components/scrollToTop/scrollToTop';
 import SocialMediaConnect from '@/components/socialMediaConnect/SocialMediaConnect';
 import {
   fadeInBottom1,
-  fadeInBottomParent,
+  fadeInParent,
   fadeInRight,
   fullWidthVariant,
   zoomInTop,
@@ -16,10 +16,10 @@ import AnimatedSection from '@/components/animatedSection/AnimatedSection';
 
 const Footer = () => {
   return (
-    <AnimatedSection animation={fadeInBottomParent}>
-      <footer className='pt-[5rem] md:pt-[8rem] pb-[5rem] bg-[#101214]'>
-        <ScrollToTop />
-        <div className='max-container'>
+    <footer className='pt-[5rem] md:pt-[8rem] pb-[5rem] bg-[#101214]'>
+      <ScrollToTop />
+      <div className='max-container'>
+        <AnimatedSection animation={fadeInParent}>
           <motion.div variants={zoomInTop}>
             <Logo
               width='w-[10rem]'
@@ -43,9 +43,9 @@ const Footer = () => {
               </span>
             </motion.p>
           </div>
-        </div>
-      </footer>
-    </AnimatedSection>
+        </AnimatedSection>
+      </div>
+    </footer>
   );
 };
 

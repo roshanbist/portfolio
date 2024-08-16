@@ -65,6 +65,15 @@ const config: Config = {
         parallaxImage: "url('../assets/images/stoneStack.jpg')",
         noise: "url('../assets/images/noise.png')",
       },
+      keyframes: {
+        slideFullWidth: {
+          '0%': { width: '0%' },
+          '100%': { width: '100%' },
+        },
+      },
+      animation: {
+        slideFullWidth: 'slideFullWidth 0.7s ease-in-out',
+      },
     },
   },
   plugins: [],

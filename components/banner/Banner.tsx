@@ -1,11 +1,15 @@
 'use client';
 
-// import { motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 import AnimatedAvatar from '@/components/banner/AnimatedAvatar';
 import TypewriteText from '@/components/banner/TypewriteText';
 import AnimatedSection from '@/components/animatedSection/AnimatedSection';
-import { bannerParentVariant } from '@/components/animatedSection/animationOption';
+import {
+  // bannerParentVariant,
+  fadeInBottomChildren,
+  fadeInParent,
+} from '@/components/animatedSection/animationOption';
 
 const Banner = () => {
   return (
@@ -13,18 +17,26 @@ const Banner = () => {
       <AnimatedAvatar />
       <AnimatedSection
         className='md:flex-1 md:pr-4 md:order-1'
-        animation={bannerParentVariant}
+        animation={fadeInParent}
       >
-        <span className='inline-flex py-[0.6rem] px-4 mb-10 rounded-[0.3rem] tracking-[0.2rem] uppercase font-medium bg-primary text-primary-foreground font-robotoCondensed'>
+        <motion.span
+          className='inline-flex py-[0.6rem] px-4 mb-10 rounded-[0.3rem] tracking-[0.2rem] uppercase font-medium bg-primary text-primary-foreground font-robotoCondensed'
+          variants={fadeInBottomChildren}
+        >
           Roshan Bist
-        </span>
-        <h1 className='uppercase font-bold text-[3.8rem]/[1.11] md:text-[5.4rem] lg:text-[6.2rem] mb-6 font-robotoCondensed'>
+        </motion.span>
+        <motion.h1
+          className='uppercase font-bold text-[3.8rem]/[1.11] md:text-[5.4rem] lg:text-[6.2rem] mb-6 font-robotoCondensed'
+          variants={fadeInBottomChildren}
+        >
           {` Hi, I\'m Roshan`}
-        </h1>
+        </motion.h1>
         <TypewriteText />
-        <button className='primary-button btn'>
-          <span className='relative z-10'>Download CV</span>
-        </button>
+        <motion.div variants={fadeInBottomChildren}>
+          <button className='primary-button btn'>
+            <span className='relative z-10'>Download CV</span>
+          </button>
+        </motion.div>
       </AnimatedSection>
     </div>
   );

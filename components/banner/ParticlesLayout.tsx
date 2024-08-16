@@ -7,7 +7,7 @@ import Particles from 'react-tsparticles';
 import { loadSlim } from 'tsparticles-slim';
 
 import AnimatedSection from '@/components/animatedSection/AnimatedSection';
-import { fadeInVariant } from '@/components/animatedSection/animationOption';
+import { fadeInChildren } from '@/components/animatedSection/animationOption';
 
 const ParticlesLayout = () => {
   const { theme } = useTheme();
@@ -20,7 +20,7 @@ const ParticlesLayout = () => {
   return (
     <AnimatedSection
       className='absolute left-0 w-full top-0 h-full z-[-1]'
-      animation={fadeInVariant}
+      animation={fadeInChildren}
     >
       <Particles
         id='tsparticles'
