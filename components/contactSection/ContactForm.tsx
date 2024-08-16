@@ -6,8 +6,8 @@ import { toast } from 'react-toastify';
 import { motion } from 'framer-motion';
 
 import {
-  fadeInBottomChildren,
-  fadeInLeft,
+  fadeInLeftChildren,
+  // fadeInLeftChildren,
 } from '@/components/animatedSection/animationOption';
 
 const ContactForm = () => {
@@ -52,7 +52,7 @@ const ContactForm = () => {
   return (
     <div>
       <form ref={formRef} onSubmit={sendEmail}>
-        <motion.div className='mb-12' variants={fadeInBottomChildren}>
+        <motion.div className='mb-12' variants={fadeInLeftChildren}>
           <input
             type='text'
             name='user_name'
@@ -61,7 +61,7 @@ const ContactForm = () => {
             required
           />
         </motion.div>
-        <motion.div className='mb-12' variants={fadeInBottomChildren}>
+        <motion.div className='mb-12' variants={fadeInLeftChildren}>
           <input
             type='email'
             name='user_email'
@@ -70,7 +70,7 @@ const ContactForm = () => {
             required
           />
         </motion.div>
-        <motion.div className='mb-12' variants={fadeInBottomChildren}>
+        <motion.div className='mb-12' variants={fadeInLeftChildren}>
           <textarea
             name='user_message'
             className='form-input min-h-[15rem] max-h-[30rem]'
@@ -78,12 +78,11 @@ const ContactForm = () => {
             required
           />
         </motion.div>
-        <motion.button
-          className='btn primary-button'
-          variants={fadeInBottomChildren}
-        >
-          <span className='relative z-10'>Send message</span>
-        </motion.button>
+        <motion.div variants={fadeInLeftChildren}>
+          <button className='btn primary-button'>
+            <span className='relative z-10'>Send message</span>
+          </button>
+        </motion.div>
       </form>
     </div>
   );

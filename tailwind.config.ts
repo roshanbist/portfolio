@@ -62,7 +62,7 @@ const config: Config = {
       backgroundImage: {
         avatar1: "url('../assets/images/avatar1.jpg')",
         avatar2: "url('../assets/images/avatar2.jpeg')",
-        parallax1: "url('../assets/images/stoneStack.jpg')",
+        parallaxImage: "url('../assets/images/stoneStack.jpg')",
         noise: "url('../assets/images/noise.png')",
       },
     },
