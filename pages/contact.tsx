@@ -17,12 +17,10 @@ const Contact = () => {
         className='max-container pt-[3rem]'
         animation={fadeInParent}
       >
-        {/* <div className='max-container pt-[3rem]'> */}
         <div className='md:max-w-[50%]'>
           <SectionHeading heading='Contact Me' />
           <ContactForm />
         </div>
-        {/* </div> */}
       </AnimatedSection>
     </section>
   );

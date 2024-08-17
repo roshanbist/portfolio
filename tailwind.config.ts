@@ -24,7 +24,6 @@ const config: Config = {
       },
       colors: {
         border: 'hsl(var(--border))',
-        // input: 'hsl(var(--input))',
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         primary: {
@@ -41,15 +40,12 @@ const config: Config = {
         },
         accent: {
           DEFAULT: 'hsl(var(--accent))',
-          // foreground: 'hsl(var(--accent-foreground))',
         },
         destructive: {
           DEFAULT: 'hsl(var(--destructive))',
-          // foreground: 'hsl(var(--destructive-foreground))',
         },
         link: {
           DEFAULT: 'hsl(var(--link))',
-          // foreground: 'hsl(var(--ring-foreground))',
         },
       },
       transitionDuration: {

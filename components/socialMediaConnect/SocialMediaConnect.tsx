@@ -4,7 +4,6 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 
 import { socialMediaData } from '@/constants/socialMediaData';
-// import AnimatedSection from '@/components/animatedSection/AnimatedSection';
 import { fadeInBottomChildren } from '@/components/animatedSection/animationOption';
 
 const SocialMediaConnect = ({ textColor }: { textColor?: string }) => {

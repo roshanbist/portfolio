@@ -12,10 +12,8 @@ const Projects = () => {
       id='projects'
     >
       <AnimatedSection className='max-container' animation={fadeInParent}>
-        {/* <div className='max-container'> */}
         <SectionHeading heading='Projects' />
         <ProjectsSection />
-        {/* </div> */}
       </AnimatedSection>
     </section>
   );

@@ -19,7 +19,12 @@ const Navbar = () => {
 
   useEffect(() => {
     const menuHandler = (e: Event) => {
-      if (!navRef.current?.contains(e.target as Node)) {
+      const element = e.target as HTMLElement;
+
+      if (
+        !navRef.current?.contains(e.target as Node) ||
+        element.classList.contains('menu-link')
+      ) {
         setIsMobileNav(false);
       }
     };
@@ -46,13 +51,20 @@ const Navbar = () => {
   return (
     <nav ref={navRef}>
       <span
-        className='inline-flex size-16 rounded-full text-[2.5rem] cursor-pointer md:hidden justify-center items-center max-md:hover:bg-destructive max-md:transition-colors'
+        className='inline-flex size-16 rounded-full text-[2.5rem] cursor-pointer md:hidden justify-center items-center max-md:hover:bg-destructive max-md:transition-colors relative z-[2]'
         onClick={() => setIsMobileNav(!isMobileNav)}
       >
         {isMobileNav ? <LuX /> : <LuAlignRight />}
       </span>
       <div
-        className={`max-md:fixed max-md:h-svh w-full left-0 max-md:top-[8rem]  max-md:bg-background ${
+        className={`bg-[#1d1d1d]/70 backdrop-blur-sm fixed h-svh w-full left-0 top-0 bottom-0 md:hidden ${
+          isMobileNav
+            ? 'opacity-100 visible'
+            : 'max-md:opacity-0 max-md:invisible'
+        } ${isMobileView ? 'transition-opacity' : ''}`}
+      />
+      <div
+        className={`max-md:fixed max-md:h-svh max-md:w-[32rem] md:w-full right-0 max-md:top-0 max-md:pt-[8rem] max-md:bg-background ${
           isMobileNav ? 'translate-x-0' : 'max-md:translate-x-full'
         } ${isMobileView ? 'transition-transform' : ''}`}
       >
@@ -65,8 +77,8 @@ const Navbar = () => {
                 className={`cursor-pointer menu-link font-robotoCondensed relative font-medium uppercase max-md:block max-md:py-[1.2rem] max-md:px-8 max-md:hover:bg-primary md:hover:text-primary transition-colors group`}
                 spy={true}
                 smooth={true}
-                duration={500}
-                offset={-90}
+                duration={700}
+                offset={isMobileView ? -50 : -90}
               >
                 {menu.label}
                 <span
