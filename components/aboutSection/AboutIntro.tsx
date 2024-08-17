@@ -10,27 +10,8 @@ import AnimatedSection from '@/components/animatedSection/AnimatedSection';
 import {
   fadeInParent,
   fadeInBottomChildren,
-  // fadeInTopLeft,
-  // fadeInBottomRight,
-  // zoomInBottomRight,
-  // zoomInTopLeft,
   fadeInLeft,
 } from '@/components/animatedSection/animationOption';
-
-// const profileImageVariant = {
-//   hidden: {
-//     opacity: 0,
-//     x: -50,
-//   },
-//   visible: {
-//     opacity: 1,
-//     x: 0,
-//     transition: {
-//       duration: 0.5,
-//       ease: [0.42, 0, 0.58, 1],
-//     },
-//   },
-// };
 
 const AboutIntro = () => {
   return (
@@ -60,7 +41,6 @@ const AboutIntro = () => {
         animation={fadeInParent}
         className='about-content md:flex-1 lg:max-w-[60%] pb-4 md:pl-8 xl:pl-0'
       >
-        {/* <div className='about-content md:flex-1 lg:max-w-[60%] pb-4 md:pl-8 xl:pl-0'> */}
         <SectionHeading heading='about me' />
         <motion.div
           className='mb-8 text-justify'

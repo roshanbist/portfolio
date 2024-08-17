@@ -5,27 +5,12 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 
 import { projectsData } from '@/constants/projectsData';
-import AnimatedSection from '@/components/animatedSection/AnimatedSection';
-import {
-  // fadeInBottom,
-  fadeInBottomChildren,
-  fadeInParent,
-  // fadeInBottomStaggered,
-} from '@/components/animatedSection/animationOption';
+import { fadeInBottomChildren } from '@/components/animatedSection/animationOption';
 
 const ProjectsSection = () => {
   return (
-    <AnimatedSection
-      className='sm:grid sm:grid-cols-2 lg:grid-cols-3 sm:gap-8 md:gap-16 pt-[3rem]'
-      animation={fadeInParent}
-    >
-      {/* <div className='sm:grid sm:grid-cols-2 lg:grid-cols-3 sm:gap-8 md:gap-16 pt-[3rem]'> */}
+    <div className='sm:grid sm:grid-cols-2 lg:grid-cols-3 sm:gap-8 md:gap-16 pt-[3rem]'>
       {projectsData.map((project) => (
-        // <AnimatedSection
-        //   animation={fadeInBottom}
-        //   key={project.title}
-        //   className='cursor-pointer group max-sm:mb-[3rem]'
-        // >
         <motion.div
           key={project.title}
           className='cursor-pointer group max-sm:mb-[3rem]'
@@ -69,8 +54,7 @@ const ProjectsSection = () => {
           </div>
         </motion.div>
       ))}
-      {/* </div> */}
-    </AnimatedSection>
+    </div>
   );
 };
 

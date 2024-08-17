@@ -5,10 +5,7 @@ import emailjs from '@emailjs/browser';
 import { toast } from 'react-toastify';
 import { motion } from 'framer-motion';
 
-import {
-  fadeInLeft,
-  // fadeInLeft,
-} from '@/components/animatedSection/animationOption';
+import { fadeInLeft } from '@/components/animatedSection/animationOption';
 
 const ContactForm = () => {
   const formRef = useRef<HTMLFormElement | null>(null);

@@ -1,189 +1,3 @@
-// replaced this with fadeInParent
-// export const fadeInVariantParent = {
-//   hidden: { opacity: 0 },
-//   visible: {
-//     opacity: 1,
-
-//     transition: {
-//       // duration: 0.5,
-//       ease: [0.42, 0, 0.58, 1],
-//       delayChildren: 0.2,
-//       staggerChildren: 0.1,
-//     },
-//   },
-// };
-
-export const fadeInChildren = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-
-    transition: {
-      duration: 0.5,
-      ease: [0.42, 0, 0.58, 1],
-    },
-  },
-};
-
-// replaced this with fadeInParent and bottomChildren
-// export const bannerParentVariant = {
-//   hidden: { opacity: 0, x: -50 },
-//   visible: {
-//     opacity: 1,
-//     x: 0,
-//     transition: {
-//       duration: 0.5,
-//       ease: [0.42, 0, 0.58, 1],
-//       delay: 0.06,
-//     },
-//   },
-// };
-
-export const zoomInTopRight = {
-  hidden: { opacity: 0, scale: 0.8, x: 50, y: -50 },
-  visible: {
-    opacity: 1,
-    scale: 1,
-    x: 0,
-    y: 0,
-    transition: {
-      duration: 0.5,
-      ease: [0.42, 0, 0.58, 1],
-      delay: 0.2,
-    },
-  },
-};
-
-export const fadeInLeft = {
-  hidden: { opacity: 0, x: -30 },
-  visible: {
-    opacity: 1,
-    x: 0,
-    transition: {
-      duration: 0.5,
-      ease: [0.42, 0, 0.58, 1],
-    },
-  },
-};
-
-// export const fadeInLeftChildren = {
-//   hidden: { opacity: 0, x: -50 },
-//   visible: {
-//     opacity: 1,
-//     x: 0,
-//     transition: {
-//       duration: 0.5,
-//       ease: [0.42, 0, 0.58, 1],
-//     },
-//   },
-// };
-
-// export const zoomInTopLeft = {
-//   hidden: { opacity: 0, scale: 0.8, x: -5 },
-//   visible: {
-//     opacity: 1,
-//     x: 0,
-//     scale: 1,
-//     transition: {
-//       duration: 0.5,
-//       ease: [0.42, 0, 0.58, 1],
-//     },
-//   },
-// };
-
-export const fadeInBottom1 = {
-  hidden: { opacity: 0, y: 50 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.5,
-      ease: [0.42, 0, 0.58, 1],
-      delay: 0.02,
-    },
-  },
-};
-
-export const zoomInBottomRight = {
-  hidden: { opacity: 0, scale: 0.8, y: 750 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    scale: 1,
-    transition: {
-      duration: 0.5,
-      ease: [0.42, 0, 0.58, 1],
-    },
-  },
-};
-
-export const fadeInRight = {
-  hidden: { opacity: 0, x: 50 },
-  visible: {
-    opacity: 1,
-    x: 0,
-    transition: {
-      duration: 0.5,
-      ease: [0.42, 0, 0.58, 1],
-      delay: 0.02,
-    },
-  },
-};
-
-export const fadeInRightParent = {
-  hidden: { opacity: 0, x: -50 },
-  visible: {
-    opacity: 1,
-    x: 0,
-    transition: {
-      // duration: 0.5,
-      ease: [0.42, 0, 0.58, 1],
-      delayChildren: 0.2,
-      staggerChildren: 0.5,
-    },
-  },
-};
-
-export const fadeInRightChildren = {
-  hidden: { opacity: 0, x: 50 },
-  visible: {
-    opacity: 1,
-    x: 0,
-    transition: {
-      duration: 0.5,
-      ease: [0.42, 0, 0.58, 1],
-      delay: 0.3,
-    },
-  },
-};
-
-// export const fadeInBottomParent = {
-//   hidden: { opacity: 0 },
-//   visible: {
-//     opacity: 1,
-//     // y: 0,
-//     transition: {
-//       // duration: 0.5,
-//       ease: [0.42, 0, 0.58, 1],
-//       // delayChildren: 0.2,
-//       staggerChildren: 0.4,
-//       when: 'beforeChildren',
-//     },
-//   },
-// };
-
-// export const fadeInBottomChildren = {
-//   hidden: { opacity: 0, y: 30 },
-//   visible: {
-//     opacity: 1,
-//     y: 0,
-//     transition: {
-//       duration: 0.5,
-//       ease: [0.42, 0, 0.58, 1],
-//     },
-//   },
-// };
-
 export const fadeInParent = {
   hidden: { opacity: 0 },
   visible: {
@@ -209,6 +23,43 @@ export const fadeInBottomChildren = {
   },
 };
 
+export const fadeInChildren = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+
+    transition: {
+      duration: 0.5,
+      ease: [0.42, 0, 0.58, 1],
+    },
+  },
+};
+
+export const fadeInLeft = {
+  hidden: { opacity: 0, x: -30 },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      duration: 0.5,
+      ease: [0.42, 0, 0.58, 1],
+    },
+  },
+};
+
+export const fadeInRight = {
+  hidden: { opacity: 0, x: 50 },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      duration: 0.5,
+      ease: [0.42, 0, 0.58, 1],
+      delay: 0.02,
+    },
+  },
+};
+
 export const zoomInParent = {
   hidden: { opacity: 0, scale: 0.8 },
   visible: {
@@ -218,7 +69,6 @@ export const zoomInParent = {
       duration: 0.5,
       ease: [0.42, 0, 0.58, 1],
       when: 'beforeChildren',
-      // staggerChildren: 0.6,
       staggerChildren: 0.2,
     },
   },
@@ -237,7 +87,22 @@ export const zoomInTop = {
   },
 };
 
-export const fullWidthVariant = {
+export const zoomInTopRight = {
+  hidden: { opacity: 0, scale: 0.8, x: 50, y: -50 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    x: 0,
+    y: 0,
+    transition: {
+      duration: 0.5,
+      ease: [0.42, 0, 0.58, 1],
+      delay: 0.2,
+    },
+  },
+};
+
+export const slideFullWidth = {
   hidden: { opacity: 0, width: 0 },
   visible: {
     opacity: 1,
@@ -250,7 +115,7 @@ export const fullWidthVariant = {
   },
 };
 
-export const fullHeightVariant = {
+export const slideFullHeight = {
   hidden: { opacity: 0, height: 0 },
   visible: {
     opacity: 1,
@@ -258,7 +123,6 @@ export const fullHeightVariant = {
     transition: {
       duration: 0.7,
       ease: [0.42, 0, 0.58, 1],
-      // delay: 0.3,
     },
   },
 };

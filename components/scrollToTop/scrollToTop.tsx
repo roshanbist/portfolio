@@ -27,7 +27,7 @@ const ScrollToTop = () => {
   }, [isScrollToTop]);
 
   const scrollTopHandler = () => {
-    // it can be achieved in various way like window.scrollTo or using react-scroll
+    // it can be achieved in various way, window.scrollTo or using react-scroll
     // window.scrollTo({ top: 0, behavior: 'smooth' });
     animateScroll.scrollToTop();
   };

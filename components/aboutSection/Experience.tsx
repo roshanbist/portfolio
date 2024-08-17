@@ -9,7 +9,7 @@ import { experienceData } from '@/constants/experienceData';
 import {
   fadeInBottomChildren,
   fadeInParent,
-  fullHeightVariant,
+  slideFullHeight,
   zoomInParent,
   zoomInTop,
 } from '@/components/animatedSection/animationOption';
@@ -35,7 +35,7 @@ const Experience = () => {
                   <FaGraduationCap />
                 </motion.span>
                 <motion.hr
-                  variants={fullHeightVariant}
+                  variants={slideFullHeight}
                   className='absolute left-0 top-0 w-[0.1rem] bg-primary'
                 />
                 <div>
@@ -57,7 +57,6 @@ const Experience = () => {
         <AnimatedSection animation={fadeInParent}>
           <div className='md:ml-[3.5rem]'>
             <SectionHeading heading='Experience' />
-            {/* <div className='relative'> */}
             {experienceData.map((data) => (
               <motion.div
                 className='pl-[3rem] lg:pl-[5rem] relative pb-4 mb-6 md:mb-8'
@@ -71,7 +70,7 @@ const Experience = () => {
                   <FaBriefcase />
                 </motion.span>
                 <motion.hr
-                  variants={fullHeightVariant}
+                  variants={slideFullHeight}
                   className='absolute left-0 top-0 w-[0.1rem] bg-primary'
                 />
                 <div>
@@ -86,8 +85,6 @@ const Experience = () => {
                 </div>
               </motion.div>
             ))}
-            {/* <span className='absolute left-0 top-0 w-[0.1rem] bottom-[0] bg-primary' /> */}
-            {/* </div> */}
           </div>
         </AnimatedSection>
       </div>

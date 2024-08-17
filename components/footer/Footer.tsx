@@ -6,10 +6,9 @@ import Logo from '@/components/logo/Logo';
 import ScrollToTop from '@/components/scrollToTop/scrollToTop';
 import SocialMediaConnect from '@/components/socialMediaConnect/SocialMediaConnect';
 import {
-  fadeInBottom1,
+  fadeInBottomChildren,
   fadeInParent,
-  fadeInRight,
-  fullWidthVariant,
+  slideFullWidth,
   zoomInTop,
 } from '@/components/animatedSection/animationOption';
 import AnimatedSection from '@/components/animatedSection/AnimatedSection';
@@ -33,10 +32,10 @@ const Footer = () => {
           </div>
           <div className='text-center mt-[2rem]'>
             <motion.hr
-              variants={fullWidthVariant}
+              variants={slideFullWidth}
               className='border-border/30 mb-[4rem] '
             />
-            <motion.p variants={fadeInBottom1}>
+            <motion.p variants={fadeInBottomChildren}>
               <span className='text-[#ebecf0]/60'>Copyrights © 2024 </span>
               <span className='text-primary font-bold capitalize'>
                 Roshan Bist

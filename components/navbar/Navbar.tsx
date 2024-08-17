@@ -2,8 +2,8 @@
 
 import { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-scroll';
-
 import { LuAlignRight, LuX } from 'react-icons/lu';
+
 import { menuItems } from '@/constants/menuItems';
 
 const Navbar = () => {
@@ -66,7 +66,7 @@ const Navbar = () => {
                 spy={true}
                 smooth={true}
                 duration={500}
-                offset={-70}
+                offset={-90}
               >
                 {menu.label}
                 <span

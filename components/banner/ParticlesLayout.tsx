@@ -27,11 +27,6 @@ const ParticlesLayout = () => {
         init={particlesInit}
         className='w-full h-full'
         options={{
-          background: {
-            //   color: {
-            //     value: "#0d47a1",
-            //   },
-          },
           fullScreen: false,
           fpsLimit: 120,
           interactivity: {

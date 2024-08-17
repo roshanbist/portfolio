@@ -5,45 +5,52 @@
 html {
   /* 1rem = 10px */
   font-size: 62.5%;
-  /* scroll-behavior: smooth; */
 }
 
 @layer base {
   :root {
     /* main body background color */
     --background: 0 100% 100%;
+
     /* main body text color */
     --foreground: 0 0% 24%;
+
     /* primary button background color */
     --primary: 353 81% 51%;
+
     /* primary button white text color */
     --primary-foreground: 0 100% 100%;
+
     /* primary button background hover */
     --primary-hover: 353 92% 41%;
+
     /* banner bg */
     --banner: 225 40% 98%;
+
     /* section 1 bg color */
     --section-primary: 0 100% 100%;
+
     /* section 2 bg color */
     --section-secondary: 225 40% 98%;
+
     /* heading color */
     --heading: 240 9% 13%;
+
     /* card background color section 1 */
     --accent: 0 0% 96%;
-    /* card text color */
-    /* --accent-foreground: 210 11% 7%; */
+
     /* card secondary background color */
     --destructive: 210 40% 96.1%;
+
     /* card secondary text color */
     --destructive-foreground: 210 11% 7%;
+
     /* border color */
     --border: 240 6% 90%;
-    /* input background color */
-    /* --input: 240 6% 90%; */
+
     /* default link color */
     --link: 353 81% 51%;
-    /* default link hover color */
-    /* --ring-foreground: 142 76% 36%; */
+
     /* footer bg */
     --footer: 235 100% 2%;
   }
@@ -51,37 +58,43 @@ html {
   .dark {
     /* base background color */
     --background: 210 11% 7%;
+
     /* base text color */
     --foreground: 230 10% 83%;
+
     /* primary background color */
     --primary: 353 81% 51%;
+
     /* primary button text color */
     --primary-foreground: 0 100% 100%;
+
     /* primary button background hover */
     --primary-hover: 353 92% 41%;
+
     /* banner bg - sme as body bg */
     --banner: 210 11% 7%;
+
     /* section 1 bg color */
     --section-primary: 0 0 10%;
+
     /* section 2 bg color */
     --section-secondary: 0 0 6%;
+
     /* heading color */
     --heading: 0 0% 100%;
 
     /* --section 1 card background */
     --accent: 0 0% 10%;
-    /* --accent-foreground: 0 100% 100%; */
+
     /* card secondary background color */
     --destructive: 218 17% 18%;
-    /* card secondary text color */
-    /* --destructive-foreground: 0 100% 100%; */
+
+    /* border color */
     --border: 240 4% 24%;
-    /* input background color */
-    /* --input: 240 4% 24%; */
+
     /* default link color */
     --link: 353 81% 51%;
-    /* default link hover color */
-    /* --ring-foreground: 142 76% 36%; */
+
     /* footer bg */
     --footer: 235 100% 2%;
   }

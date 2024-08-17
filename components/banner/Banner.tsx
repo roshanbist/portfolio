@@ -6,7 +6,6 @@ import AnimatedAvatar from '@/components/banner/AnimatedAvatar';
 import TypewriteText from '@/components/banner/TypewriteText';
 import AnimatedSection from '@/components/animatedSection/AnimatedSection';
 import {
-  // bannerParentVariant,
   fadeInBottomChildren,
   fadeInParent,
 } from '@/components/animatedSection/animationOption';

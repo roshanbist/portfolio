@@ -3,7 +3,6 @@
 import { motion } from 'framer-motion';
 
 import { Skill } from '@/types/all';
-import { fullWidthVariant } from '@/components/animatedSection/animationOption';
 
 const SkillCard = ({ skills }: { skills: Skill[] }) => {
   return (
@@ -19,13 +18,11 @@ const SkillCard = ({ skills }: { skills: Skill[] }) => {
           <span className='relative overflow-hidden w-full h-[0.2rem] bg-foreground/40 block'>
             <motion.span
               className={`absolute top-0 left-0 h-full bg-foreground`}
-              // style={{ width: `${skill.proficiency}%` }}
               initial={{ width: '0%' }}
               animate={{ width: `${skill.proficiency}%` }}
               transition={{
-                duration: 0.5,
+                duration: 0.7,
                 ease: [0.42, 0, 0.58, 1],
-                // delay: 0.3,
               }}
             />
           </span>
