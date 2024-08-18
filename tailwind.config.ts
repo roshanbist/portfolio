@@ -66,9 +66,21 @@ const config: Config = {
           '0%': { width: '0%' },
           '100%': { width: '100%' },
         },
+        morph: {
+          '0%': {
+            borderRadius: '60% 40% 30% 70% / 60% 30% 70% 40%',
+          },
+          '50%': {
+            borderRadius: '30% 60% 70% 40% / 50% 60% 30% 60%',
+          },
+          '100%': {
+            borderRadius: '60% 40% 30% 70% / 60% 30% 70% 40%',
+          },
+        },
       },
       animation: {
         slideFullWidth: 'slideFullWidth 0.7s ease-in-out',
+        morph: 'morph 8s ease-in-out infinite 1s',
       },
     },
   },

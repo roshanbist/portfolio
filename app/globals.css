@@ -141,7 +141,7 @@ html {
 }
 
 .avatar-img {
-  animation: morph 8s ease-in-out infinite 1s;
+  /* animation: morph 8s ease-in-out infinite 1s; */
   background-blend-mode: multiply;
   box-shadow: inset 0px 0px 0px 9px rgba(255, 255, 255, 0.2);
 }

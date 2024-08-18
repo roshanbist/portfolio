@@ -66,7 +66,7 @@ export const fadeInTop = {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 0.4,
+      duration: 0.5,
       ease: [0.42, 0, 0.58, 1],
     },
   },
