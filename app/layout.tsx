@@ -6,6 +6,7 @@ import 'react-toastify/dist/ReactToastify.css';
 // Theme provider
 import ThemeProvider from '@/components/themeProvider/ThemeProvider';
 import './globals.css';
+import Preloader from '@/components/preloader/Preloader';
 
 const robotoCondensed = Roboto_Condensed({
   subsets: ['latin'],
@@ -30,7 +31,10 @@ const oxygen = Oxygen({
 
 export const metadata: Metadata = {
   title: 'Roshan Bist',
-  description: 'Portfolio website using Next JS ',
+  description: 'Portfolio using Next JS ',
+  icons: {
+    icon: '/favicon.svg',
+  },
 };
 
 export default function RootLayout({
@@ -40,31 +44,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en' suppressHydrationWarning>
-      <head>
-        {/* Favicon Links */}
-        <link rel='icon' href='/favicon.ico' />
-        <link
-          rel='apple-touch-icon'
-          sizes='180x180'
-          href='/apple-touch-icon.png'
-        />
-        <link
-          rel='icon'
-          type='image/png'
-          sizes='32x32'
-          href='/favicon-32x32.png'
-        />
-        <link
-          rel='icon'
-          type='image/png'
-          sizes='16x16'
-          href='/favicon-16x16.png'
-        />
-      </head>
       <body
         className={`${robotoCondensed.variable} ${pacifico.variable} ${oxygen.variable} font-oxygen`}
       >
         <ThemeProvider attribute='class' defaultTheme='system' enableSystem>
+          <Preloader />
           {children}
         </ThemeProvider>
         <ToastContainer autoClose={2500} />

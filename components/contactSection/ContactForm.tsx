@@ -47,41 +47,41 @@ const ContactForm = () => {
   };
 
   return (
-    <div>
-      <form ref={formRef} onSubmit={sendEmail}>
-        <motion.div className='mb-12' variants={fadeInLeft}>
-          <input
-            type='text'
-            name='user_name'
-            className='form-input'
-            placeholder='Name*'
-            required
-          />
-        </motion.div>
-        <motion.div className='mb-12' variants={fadeInLeft}>
-          <input
-            type='email'
-            name='user_email'
-            className='form-input'
-            placeholder='Email*'
-            required
-          />
-        </motion.div>
-        <motion.div className='mb-12' variants={fadeInLeft}>
-          <textarea
-            name='user_message'
-            className='form-input min-h-[15rem] max-h-[30rem]'
-            placeholder='Message*'
-            required
-          />
-        </motion.div>
-        <motion.div variants={fadeInLeft}>
-          <button className='btn primary-button'>
-            <span className='relative z-10'>Send message</span>
-          </button>
-        </motion.div>
-      </form>
-    </div>
+    // <div>
+    <form ref={formRef} onSubmit={sendEmail}>
+      <motion.div className='mb-12' variants={fadeInLeft}>
+        <input
+          type='text'
+          name='user_name'
+          className='form-input'
+          placeholder='Name*'
+          required
+        />
+      </motion.div>
+      <motion.div className='mb-12' variants={fadeInLeft}>
+        <input
+          type='email'
+          name='user_email'
+          className='form-input'
+          placeholder='Email*'
+          required
+        />
+      </motion.div>
+      <motion.div className='mb-12' variants={fadeInLeft}>
+        <textarea
+          name='user_message'
+          className='form-input min-h-[15rem] max-h-[30rem]'
+          placeholder='Message*'
+          required
+        />
+      </motion.div>
+      <motion.div variants={fadeInLeft}>
+        <button className='btn primary-button'>
+          <span className='relative z-10'>Send message</span>
+        </button>
+      </motion.div>
+    </form>
+    // </div>
   );
 };
 

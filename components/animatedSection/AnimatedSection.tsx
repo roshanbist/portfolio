@@ -1,5 +1,6 @@
-import React, { useEffect, useRef } from 'react';
-import { motion, useInView, useAnimation } from 'framer-motion';
+import React, { useEffect } from 'react';
+import { motion, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 import { AnimatedSectionType } from '@/types/all';
 
@@ -8,8 +9,11 @@ const AnimatedSection: React.FC<AnimatedSectionType> = ({
   className,
   animation,
 }) => {
-  const motionRef = useRef(null);
-  const inView = useInView(motionRef, { once: true });
+  const { ref, inView } = useInView({
+    threshold: 0.15,
+    triggerOnce: true,
+    rootMargin: '80px 0px 0px 0px', // for sticky header
+  });
   const controls = useAnimation();
 
   useEffect(() => {
@@ -20,7 +24,7 @@ const AnimatedSection: React.FC<AnimatedSectionType> = ({
 
   return (
     <motion.div
-      ref={motionRef}
+      ref={ref}
       className={className}
       variants={animation}
       initial='hidden'

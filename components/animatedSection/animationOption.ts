@@ -55,7 +55,6 @@ export const fadeInRight = {
     transition: {
       duration: 0.5,
       ease: [0.42, 0, 0.58, 1],
-      // delay: 0.02,
     },
   },
 };
@@ -66,8 +65,9 @@ export const fadeInTop = {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 0.5,
+      duration: 0.6,
       ease: [0.42, 0, 0.58, 1],
+      delay: 0.3,
     },
   },
 };
@@ -109,7 +109,7 @@ export const zoomInTopRight = {
     transition: {
       duration: 0.5,
       ease: [0.42, 0, 0.58, 1],
-      delay: 0.2,
+      delay: 0.3,
     },
   },
 };

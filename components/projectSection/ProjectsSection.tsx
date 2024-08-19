@@ -9,7 +9,7 @@ import { fadeInBottomChildren } from '@/components/animatedSection/animationOpti
 
 const ProjectsSection = () => {
   return (
-    <div className='sm:grid sm:grid-cols-2 lg:grid-cols-3 sm:gap-8 md:gap-16 pt-[3rem]'>
+    <div className='sm:grid sm:grid-cols-2 lg:grid-cols-3 sm:gap-8 md:gap-16'>
       {projectsData.map((project) => (
         <motion.div
           key={project.title}
@@ -23,6 +23,8 @@ const ProjectsSection = () => {
               src={project.thumbnail}
               alt={project.description}
               fill
+              sizes='100vw, (min-width: 640px) 50vw, (min-width: 1024px) 33.33vw'
+              priority
               className='object-cover scale-100 group-hover:scale-110 group-hover:rotate-3 transition-[transform] translateZ-0'
             />
             <div className='absolute bottom-[-8rem] left-0 w-full text-white p-[3rem] z-[2] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-gradient-to-b after:from-transparent after:via-black/60 after:via-45% after:to-black after:to-100% after:z-[-1] group-hover:bottom-0 transition-all duration-500 after:transition-all group-hover:after:opacity-0 '>

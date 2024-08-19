@@ -58,14 +58,10 @@ const config: Config = {
       backgroundImage: {
         avatar1: "url('../assets/images/avatar1.jpg')",
         avatar2: "url('../assets/images/avatar2.jpeg')",
-        parallaxImage: "url('../assets/images/stoneStack.jpg')",
+        parallaxImage: "url('../assets/images/contact.svg')",
         noise: "url('../assets/images/noise.png')",
       },
       keyframes: {
-        slideFullWidth: {
-          '0%': { width: '0%' },
-          '100%': { width: '100%' },
-        },
         morph: {
           '0%': {
             borderRadius: '60% 40% 30% 70% / 60% 30% 70% 40%',
@@ -79,7 +75,6 @@ const config: Config = {
         },
       },
       animation: {
-        slideFullWidth: 'slideFullWidth 0.7s ease-in-out',
         morph: 'morph 8s ease-in-out infinite 1s',
       },
     },
