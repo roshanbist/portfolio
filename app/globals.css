@@ -136,6 +136,11 @@ html {
   }
 }
 
+.blur-effect {
+  -webkit-backdrop-filter: blur(4px); /* For Safari and Chrome on iOS */
+  backdrop-filter: blur(4px);
+}
+
 .translateZ-0 {
   transform: translateZ(0);
 }
