@@ -47,7 +47,7 @@ const AboutIntro = () => {
           variants={fadeInBottomChildren}
         >
           <p>
-            <b>Hello!</b> I&apos;m Roshan, an aspiring Full-Stack Developer with
+            {`Hello! I'm Roshan, an aspiring Full-Stack Developer with
             a unique blend of technical skills and a creative background. My
             journey into technology began in 2015 when I transitioned from
             photography to developing interactive User Interfaces. After
@@ -57,7 +57,7 @@ const AboutIntro = () => {
             to a mid-level developer, where I contributed to major projects,
             collaborated as a team member, and mentored junior developers. This
             experience played a crucial role in my work as a Research Assistant
-            at Tampere University.
+            at Tampere University.`}
           </p>
         </motion.div>
         <motion.div
@@ -68,7 +68,7 @@ const AboutIntro = () => {
             In June 2024, I graduated with an MSc Degree in Computing Sciences
             from Tampere University, Finland, specializing in Software, Web, and
             Cloud. I further honed my skills by completing the Full-Stack
-            Development Program at Integrify, Finland in August 2024."
+            Development Program at Integrify, Finland in August 2024.
           </p>
         </motion.div>
         <SocialMediaConnect />
