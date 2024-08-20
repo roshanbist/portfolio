@@ -2,7 +2,6 @@
 
 import { motion } from 'framer-motion';
 
-import Logo from '@/components/logo/Logo';
 import ScrollToTop from '@/components/scrollToTop/scrollToTop';
 import SocialMediaConnect from '@/components/socialMediaConnect/SocialMediaConnect';
 import {
@@ -19,14 +18,7 @@ const Footer = () => {
       <ScrollToTop />
       <div className='max-container'>
         <AnimatedSection animation={fadeInParent}>
-          <motion.div variants={zoomInTop}>
-            <Logo
-              width='w-[10rem]'
-              height='h-[10rem]'
-              textSize='text-[3.5rem]'
-              classname='mx-auto'
-            />
-          </motion.div>
+          <motion.div variants={zoomInTop}></motion.div>
           <div className='flex flex-wrap justify-center mt-[3rem] '>
             <SocialMediaConnect textColor='text-[#ebecf0]' />
           </div>

@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 import ThemeToggle from '@/components/themeToggle/ThemeToggle';
 import Navbar from '@/components/navbar/Navbar';
-import Logo from '@/components/logo/Logo';
+
 import { fadeInTop } from '@/components/animatedSection/animationOption';
 
 const Header = () => {
@@ -46,12 +46,6 @@ const Header = () => {
         }`}
       >
         <div className='max-container flex flex-wrap justify-between items-center'>
-          <Logo
-            width='w-[6rem]'
-            height='h-[6rem]'
-            textSize='text-[2.5rem]'
-            classname='mr-[1rem]'
-          />
           <div className='flex flex-wrap flex-1 justify-end items-center'>
             <Navbar />
             <ThemeToggle />
