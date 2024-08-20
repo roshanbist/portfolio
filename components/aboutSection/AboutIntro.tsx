@@ -30,6 +30,7 @@ const AboutIntro = () => {
             fill
             sizes='100%'
             className='rounded-[0.4rem] object-cover'
+            priority
           />
         </motion.div>
         <motion.div

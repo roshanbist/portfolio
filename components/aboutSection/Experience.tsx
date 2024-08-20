@@ -18,7 +18,7 @@ import AnimatedSection from '@/components/animatedSection/AnimatedSection';
 const Experience = () => {
   return (
     <AnimatedSection animation={zoomInParent}>
-      <div className='bg-section2 relative p-[2.5rem] md:p-[3.5rem] lg:p-[5rem] sm:grid sm:grid-cols-2 sm:gap-10 rounded-[1rem] md:rounded-[2rem] mb-[5rem]'>
+      <div className='bg-section-secondary relative p-[2.5rem] md:p-[3.5rem] lg:p-[5rem] sm:grid sm:grid-cols-2 sm:gap-10 rounded-[1rem] md:rounded-[2rem] mb-[5rem]'>
         <AnimatedSection animation={fadeInParent}>
           <div className='md:pr-1rem max-md:pb-[3rem]'>
             <SectionHeading heading='Education' />
@@ -29,7 +29,7 @@ const Experience = () => {
                 variants={fadeInBottomChildren}
               >
                 <motion.span
-                  className='absolute bg-section2 top-0 left-[-1.2rem] z-[1] text-[2.4rem] pb-[0.5rem]'
+                  className='absolute bg-section-secondary top-0 left-[-1.2rem] z-[1] text-[2.4rem] pb-[0.5rem]'
                   variants={zoomInTop}
                 >
                   <FaGraduationCap />
@@ -64,7 +64,7 @@ const Experience = () => {
                 variants={fadeInBottomChildren}
               >
                 <motion.span
-                  className='absolute bg-section2 top-0 left-[-1.2rem] z-[1] text-[2.4rem] pb-[0.5rem]'
+                  className='absolute bg-section-secondary top-0 left-[-1.2rem] z-[1] text-[2.4rem] pb-[0.5rem]'
                   variants={zoomInTop}
                 >
                   <FaBriefcase />

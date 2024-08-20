@@ -9,7 +9,7 @@ import SectionHeading from '@/components/sectionHeading/SectionHeading';
 const Contact = () => {
   return (
     <section
-      className='pt-[5rem] pb-[8rem] bg-section2 relative z-[2] overflow-hidden'
+      className='pt-[5rem] pb-[8rem] bg-section-secondary relative z-[2] overflow-hidden'
       id='contact'
     >
       <ContactParallax />

@@ -9,9 +9,8 @@ const Skills = () => {
   return (
     <section
       id='skills'
-      className='pt-[5rem] md:pt-[8rem] pb-[6rem] relative bg-section2 after:absolute after:w-0 after:h-0 after:block after:right-0 after:top-[-10rem] after:border-t-[10rem] after:border-t-transparent after:border-r-[100vw] after:border-r-section2'
+      className='pt-[5rem] md:pt-[8rem] pb-[6rem] relative bg-section-secondary after:absolute after:w-0 after:h-0 after:right-0 after:top-[-10rem] after:border-t-[10rem] after:border-t-transparent after:border-r-[100vw] after:border-r-section-secondary'
     >
-      {/* <span className='absolute -top-[10rem] [clip-path:polygon(100%_0,_0_100%,_100%_100%)] w-full left-0 h-[10rem] bg-section2' /> */}
       <div className='max-container'>
         <AnimatedSection animation={fadeInParent}>
           <SectionHeading heading='Skills' />
