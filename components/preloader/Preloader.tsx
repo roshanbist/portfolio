@@ -10,7 +10,7 @@ const Preloader = () => {
       preloader.classList.add('preloaded');
       setTimeout(() => {
         preloader.remove();
-      }, 1200);
+      }, 1500);
     };
 
     if (document.readyState === 'complete') {
