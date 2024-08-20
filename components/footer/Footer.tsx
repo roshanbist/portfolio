@@ -11,7 +11,7 @@ import {
   zoomInTop,
 } from '@/components/animatedSection/animationOption';
 import AnimatedSection from '@/components/animatedSection/AnimatedSection';
-import Logo from '@/components/logo/Logo';
+import PortfolioLogo from '@/components/portfolioLogo/PortfolioLogo';
 
 const Footer = () => {
   return (
@@ -20,7 +20,7 @@ const Footer = () => {
       <div className='max-container'>
         <AnimatedSection animation={fadeInParent}>
           <motion.div variants={zoomInTop}>
-            <Logo
+            <PortfolioLogo
               width='w-[10rem]'
               height='h-[10rem]'
               textSize='text-[3.5rem]'

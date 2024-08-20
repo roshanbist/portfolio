@@ -5,8 +5,9 @@ import { motion } from 'framer-motion';
 
 import ThemeToggle from '@/components/themeToggle/ThemeToggle';
 import Navbar from '@/components/navbar/Navbar';
-import Logo from '@/components/logo/Logo';
+
 import { fadeInTop } from '@/components/animatedSection/animationOption';
+import PortfolioLogo from '@/components/portfolioLogo/PortfolioLogo';
 
 const Header = () => {
   const [isHeader, setIsHeader] = useState<string | null>(null);
@@ -46,7 +47,7 @@ const Header = () => {
         }`}
       >
         <div className='max-container flex flex-wrap justify-between items-center'>
-          <Logo
+          <PortfolioLogo
             width='w-[6rem]'
             height='h-[6rem]'
             textSize='text-[2.5rem]'
