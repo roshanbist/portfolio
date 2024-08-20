@@ -74,10 +74,10 @@ html {
     /* banner bg - sme as body bg */
     --banner: 210 11% 7%;
 
-    /* !TODO: section 1 bg color */
+    /* section 1 bg color */
     --section-primary: 0 0% 10%;
 
-    /* !TODO: section 2 bg color */
+    /* section 2 bg color */
     --section-secondary: 0 0% 6%;
 
     /* heading color */
