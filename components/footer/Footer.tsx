@@ -11,6 +11,7 @@ import {
   zoomInTop,
 } from '@/components/animatedSection/animationOption';
 import AnimatedSection from '@/components/animatedSection/AnimatedSection';
+import Logo from '@/components/logo/Logo';
 
 const Footer = () => {
   return (
@@ -18,7 +19,14 @@ const Footer = () => {
       <ScrollToTop />
       <div className='max-container'>
         <AnimatedSection animation={fadeInParent}>
-          <motion.div variants={zoomInTop}></motion.div>
+          <motion.div variants={zoomInTop}>
+            <Logo
+              width='w-[10rem]'
+              height='h-[10rem]'
+              textSize='text-[3.5rem]'
+              classname='mx-auto'
+            />
+          </motion.div>
           <div className='flex flex-wrap justify-center mt-[3rem] '>
             <SocialMediaConnect textColor='text-[#ebecf0]' />
           </div>
