@@ -19,15 +19,15 @@ export const skillsData: Skillset[] = [
       },
       {
         name: 'JavaScript',
-        proficiency: 85,
+        proficiency: 90,
       },
       {
         name: 'TypeScript',
-        proficiency: 80,
+        proficiency: 85,
       },
       {
         name: 'React',
-        proficiency: 85,
+        proficiency: 90,
       },
       {
         name: 'Redux',

@@ -15,7 +15,7 @@ import {
 
 const AboutIntro = () => {
   return (
-    <div className='flex flex-wrap justify-between pb-[5rem] xl:pb-[10rem]'>
+    <div className='flex flex-wrap justify-between pb-[5rem] xl:pb-[12rem]'>
       <AnimatedSection
         className='relative z-10 max-w-[25rem] lg:max-w-[35rem] w-full h-[37rem] lg:h-[47rem] max-md:mx-auto max-md:mb-[7rem] md:mr-[5rem]'
         animation={fadeInParent}
@@ -48,17 +48,16 @@ const AboutIntro = () => {
         >
           <p>
             <b>Hello!</b> I&apos;m Roshan, an aspiring Full-Stack Developer with
-            a background in photography. I recently graduated with an MSc degree
-            in Computing Sciences, specializing in Software, Web & Cloud, in
-            June 2024 from Tampere University, Finland. My journey into the
-            world of coding began in 2015, when I transitioned from capturing
-            moments with a camera to developing interactive UI with code. After
-            completing a two-month web design course in 2015, I embarked on my
-            professional journey as a Frontend Developer at Rapid Web Solution
-            in Nepal, a sister company of GetDevDone (formerly P2H). Starting as
-            a trainee, I honed my skills and climbed the ranks to a mid-level
-            position over six years. During my tenure, I handled major projects
-            and mentored junior developers, gaining invaluable experience.
+            a unique blend of technical skills and a creative background. My
+            journey into technology began in 2015 when I transitioned from
+            photography to developing interactive User Interfaces. After
+            completing a two-month web design course, I started my career as a
+            Frontend Developer at Rapid Web Solution in Nepal, a subsidiary of
+            GetDevDone (formerly P2H). Over six years, I advanced from a trainee
+            to a mid-level developer, where I contributed to major projects,
+            collaborated as a team member, and mentored junior developers. This
+            experience played a crucial role in my work as a Research Assistant
+            at Tampere University.
           </p>
         </motion.div>
         <motion.div
@@ -66,12 +65,10 @@ const AboutIntro = () => {
           variants={fadeInBottomChildren}
         >
           <p>
-            Currently based in Tampere, Finland, with my recent academic
-            accomplishments and extensive professional background, I am ready to
-            embark on the next chapter of my career as a software developer. I
-            am excited to bring my expertise in both frontend and backend
-            development to new projects. Let&apos;s create something amazing
-            together!
+            In June 2024, I graduated with an MSc Degree in Computing Sciences
+            from Tampere University, Finland, specializing in Software, Web, and
+            Cloud. I further honed my skills by completing the Full-Stack
+            Development Program at Integrify, Finland in August 2024."
           </p>
         </motion.div>
         <SocialMediaConnect />

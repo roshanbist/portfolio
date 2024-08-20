@@ -1,12 +1,9 @@
 'use client';
 
-import AnimatedSection from '@/components/animatedSection/AnimatedSection';
-import {
-  fadeInChildren,
-  fadeInRight,
-} from '@/components/animatedSection/animationOption';
 import Image from 'next/image';
 
+import AnimatedSection from '@/components/animatedSection/AnimatedSection';
+import { fadeInRight } from '@/components/animatedSection/animationOption';
 import contact from '@/assets/images/contact.svg';
 
 const ContactParallax = () => {
@@ -23,7 +20,6 @@ const ContactParallax = () => {
           priority
         />
       </div>
-      {/* <div className='bg-parallaxImage opacity-70 bg-cover bg-no-repeat max-md:min-h-[35rem] md:h-full' /> */}
     </AnimatedSection>
   );
 };
