@@ -3,7 +3,7 @@ import { EducationType } from '@/types/all';
 export const educationData: EducationType[] = [
   {
     startDate: 'January 2024',
-    endDate: 'September 2024',
+    endDate: 'June 2024',
     degree: 'full stack development program',
     instituition: 'Integrify Academy',
     address: 'Helsinki, Finland',

@@ -57,7 +57,7 @@ const Navbar = () => {
         {isMobileNav ? <LuX /> : <LuAlignRight />}
       </span>
       <div
-        className={`bg-[#1d1d1d]/70 backdrop-blur-sm fixed h-svh w-full left-0 top-0 bottom-0 md:hidden ${
+        className={`bg-[#1d1d1d]/70 blur-effect fixed h-svh w-full left-0 top-0 bottom-0 md:hidden ${
           isMobileNav
             ? 'opacity-100 visible'
             : 'max-md:opacity-0 max-md:invisible'
