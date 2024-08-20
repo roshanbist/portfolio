@@ -34,21 +34,11 @@ const config: Config = {
         banner: 'hsl(var(--banner))',
         heading: 'hsl(var(--heading))',
         footer: 'hsl(var(--footer))',
-        section1: {
-          DEFAULT: 'hsl(var(--section1))',
-        },
-        section2: {
-          DEFAULT: 'hsl(var(--section2))',
-        },
-        accent: {
-          DEFAULT: 'hsl(var(--accent))',
-        },
-        destructive: {
-          DEFAULT: 'hsl(var(--destructive))',
-        },
-        link: {
-          DEFAULT: 'hsl(var(--link))',
-        },
+        section1: 'hsl(var(--section1))',
+        section2: 'hsl(var(--section2))',
+        accent: 'hsl(var(--accent))',
+        destructive: 'hsl(var(--destructive))',
+        link: 'hsl(var(--link))',
       },
       transitionDuration: {
         DEFAULT: '300ms',
