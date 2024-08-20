@@ -109,7 +109,7 @@ export const zoomInTopRight = {
     transition: {
       duration: 0.5,
       ease: [0.42, 0, 0.58, 1],
-      delay: 0.9,
+      delay: 0.7,
     },
   },
 };
