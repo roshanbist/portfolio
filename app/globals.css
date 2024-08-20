@@ -28,10 +28,12 @@ html {
     --banner: 225 40% 98%;
 
     /* section 1 bg color */
-    --section-primary: 0 100% 100%;
+    --section1: 0 100% 100%;
+    /* --section1-primary: 0 100% 100%; */
 
     /* section 2 bg color */
-    --section-secondary: 225 40% 98%;
+    /* --section-secondary: 225 40% 98%; */
+    --section2: 225 40% 98%;
 
     /* heading color */
     --heading: 240 9% 13%;
@@ -75,10 +77,10 @@ html {
     --banner: 210 11% 7%;
 
     /* section 1 bg color */
-    --section-primary: 0 0 10%;
+    --section1: 0 0 10%;
 
     /* section 2 bg color */
-    --section-secondary: 0 0 6%;
+    --section2: 0 0 6%;
 
     /* heading color */
     --heading: 0 0% 100%;
@@ -154,9 +156,9 @@ html {
   background: linear-gradient(to bottom, #e5e5be 0%, #04596e 100%);
 }
 
-.clip-custom {
+/* .clip-custom {
   clip-path: polygon(25% 0, 100% 0, 100% 100%, 25% 100%, 0 50%);
-}
+} */
 
 #preloader {
   position: fixed;

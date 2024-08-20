@@ -34,9 +34,11 @@ const config: Config = {
         banner: 'hsl(var(--banner))',
         heading: 'hsl(var(--heading))',
         footer: 'hsl(var(--footer))',
-        section: {
-          primary: 'hsl(var(--section-primary))',
-          secondary: 'hsl(var(--section-secondary))',
+        section1: {
+          DEFAULT: 'hsl(var(--section1))',
+        },
+        section2: {
+          DEFAULT: 'hsl(var(--section2))',
         },
         accent: {
           DEFAULT: 'hsl(var(--accent))',
