@@ -5,7 +5,6 @@ import { motion } from 'framer-motion';
 
 import ThemeToggle from '@/components/themeToggle/ThemeToggle';
 import Navbar from '@/components/navbar/Navbar';
-
 import { fadeInTop } from '@/components/animatedSection/animationOption';
 import PortfolioLogo from '@/components/portfolioLogo/PortfolioLogo';
 

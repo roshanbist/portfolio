@@ -47,7 +47,6 @@ const ContactForm = () => {
   };
 
   return (
-    // <div>
     <form ref={formRef} onSubmit={sendEmail}>
       <motion.div className='mb-12' variants={fadeInLeft}>
         <input
@@ -81,7 +80,6 @@ const ContactForm = () => {
         </button>
       </motion.div>
     </form>
-    // </div>
   );
 };
 
