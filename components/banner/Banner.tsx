@@ -12,7 +12,7 @@ import {
 } from '@/components/animatedSection/animationOption';
 
 const Banner = () => {
-  const cvURL = process.env.NEXT_PUBLIC_RESUME_LINK;
+  const resumeUrl = process.env.NEXT_PUBLIC_RESUME_LINK;
 
   return (
     <div className='max-md:text-center md:flex md:flex-wrap md:justify-between md:items-center'>
@@ -36,7 +36,7 @@ const Banner = () => {
         <TypewriteText />
         <motion.div variants={fadeInBottomChildren}>
           <Link
-            href={`${cvURL}`}
+            href={`${resumeUrl}`}
             className='primary-button btn'
             target='_blank'
           >
