@@ -36,7 +36,7 @@ const Banner = () => {
         <TypewriteText />
         <motion.div variants={fadeInBottomChildren}>
           <Link
-            href={`${resumeUrl}`}
+            href={'https://www.google.com'}
             className='primary-button btn'
             target='_blank'
           >
