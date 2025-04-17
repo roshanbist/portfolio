@@ -2,7 +2,7 @@
 
 import { Link } from 'react-scroll';
 
-import { LogoInfo } from '@/types/all';
+import { LogoInfo } from '@/types/types';
 
 const PortfolioLogo = (props: LogoInfo) => {
   return (

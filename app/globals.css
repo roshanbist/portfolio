@@ -42,9 +42,6 @@ html {
     /* card secondary background color */
     --destructive: 210 40% 96.1%;
 
-    /* card secondary text color */
-    --destructive-foreground: 210 11% 7%;
-
     /* border color */
     --border: 240 6% 90%;
 
@@ -153,10 +150,6 @@ html {
 .parallax-gradient {
   background: linear-gradient(to bottom, #e5e5be 0%, #04596e 100%);
 }
-
-/* .clip-custom {
-  clip-path: polygon(25% 0, 100% 0, 100% 100%, 25% 100%, 0 50%);
-} */
 
 #preloader {
   position: fixed;

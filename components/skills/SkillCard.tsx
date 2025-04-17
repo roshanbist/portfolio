@@ -2,33 +2,60 @@
 
 import { motion } from 'framer-motion';
 
-import { Skill } from '@/types/all';
+import { Skill } from '@/types/types';
+import AnimatedSection from '../animatedSection/AnimatedSection';
+import {
+  fadeInBottomChildren,
+  fadeInParent,
+} from '../animatedSection/animationOption';
 
 const SkillCard = ({ skills }: { skills: Skill[] }) => {
+  const fastFadeInBottomChildren = {
+    hidden: {
+      ...fadeInBottomChildren.hidden,
+      y: 15, // smoother entrance
+    },
+    visible: {
+      ...fadeInBottomChildren.visible,
+      transition: {
+        ...fadeInBottomChildren.visible.transition,
+        duration: 0.3, // faster transition
+      },
+    },
+  };
+
+  const fastfadeInParent = {
+    ...fadeInParent.hidden,
+    visible: {
+      ...fadeInParent.visible,
+      transition: {
+        ...fadeInParent.visible.transition,
+        duration: 0.2,
+        staggerChildren: 0.1,
+      },
+    },
+  };
+
   return (
-    <ul>
+    <AnimatedSection
+      animation={fastfadeInParent}
+      className='flex flex-wrap gap-8 justify-center'
+    >
       {skills.map((skill) => (
-        <li key={skill.name} className='mb-10'>
-          <div className='flex flex-wrap justify-between mb-4'>
-            <span className='flex-1'>{skill.name}</span>
-            <span className='w-[5rem] ml-4 text-right'>
-              {skill.proficiency}%
-            </span>
+        <motion.div
+          variants={fastFadeInBottomChildren}
+          key={skill.label}
+          className='flex flex-col items-center w-[12%] mb-6 text-center'
+        >
+          <div className='rounded-[0.5rem] size-[6.5rem] bg-background p-4 flex justify-center items-center mb-6'>
+            {<skill.icon className='text-2xl' />}
           </div>
-          <span className='relative overflow-hidden w-full h-[0.2rem] bg-foreground/40 block'>
-            <motion.span
-              className={`absolute top-0 left-0 h-full bg-foreground`}
-              initial={{ width: '0%' }}
-              animate={{ width: `${skill.proficiency}%` }}
-              transition={{
-                duration: 0.7,
-                ease: [0.42, 0, 0.58, 1],
-              }}
-            />
-          </span>
-        </li>
+          <div className='text-[1.2rem]/[1.16] font-bold uppercase'>
+            {skill.label}
+          </div>
+        </motion.div>
       ))}
-    </ul>
+    </AnimatedSection>
   );
 };
 

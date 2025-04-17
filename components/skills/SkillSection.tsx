@@ -41,7 +41,6 @@ const SkillSection = () => {
               key={sk.title}
               className={`${selectedTab === index ? '' : 'hidden'}`}
             >
-              {/* key={selectedTab} re-render/remount SkillCard component each time a new tab is selected, thus re-triggers the animation} */}
               <SkillCard key={selectedTab} skills={sk.skills} />
             </div>
           ))}

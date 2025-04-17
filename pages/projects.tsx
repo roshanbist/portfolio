@@ -1,9 +1,15 @@
 'use client';
+import { motion } from 'framer-motion';
+import { FaGithub } from 'react-icons/fa';
 
 import AnimatedSection from '@/components/animatedSection/AnimatedSection';
-import { fadeInParent } from '@/components/animatedSection/animationOption';
+import {
+  fadeInParent,
+  fadeInRight,
+} from '@/components/animatedSection/animationOption';
 import ProjectsSection from '@/components/projectSection/ProjectsSection';
 import SectionHeading from '@/components/sectionHeading/SectionHeading';
+import Link from 'next/link';
 
 const Projects = () => {
   return (
@@ -13,6 +19,16 @@ const Projects = () => {
     >
       <AnimatedSection className='max-container' animation={fadeInParent}>
         <SectionHeading heading='Projects' />
+        <motion.div className='mb-12 lg:mb-16' variants={fadeInRight}>
+          Here are some of my recent projects. For more, please visit my
+          <Link
+            href='https://github.com/roshanbist'
+            target='_blank'
+            className='inline-flex items-center mx-2 text-primary hover:text-primary-hover transition-colors'
+          >
+            GitHub <FaGithub size={16} className='ml-2' />
+          </Link>
+        </motion.div>
         <ProjectsSection />
       </AnimatedSection>
     </section>

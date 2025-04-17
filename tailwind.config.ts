@@ -35,7 +35,7 @@ const config: Config = {
         heading: 'hsl(var(--heading))',
         footer: 'hsl(var(--footer))',
         section: {
-          DEFAULT: 'hsl(var(--section))',
+          DEFAULT: 'hsl(var(--section-primary))',
           secondary: 'hsl(var(--section-secondary))',
         },
         accent: {

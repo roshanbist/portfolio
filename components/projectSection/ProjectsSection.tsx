@@ -31,6 +31,16 @@ const ProjectsSection = () => {
               <h4 className='font-bold text-lg md:text-xl font-robotoCondensed capitalize'>
                 {project.title}
               </h4>
+              <div className='flex flex-wrap gap-2 mt-2'>
+                {project.tagClouds.map((tech) => (
+                  <span
+                    key={tech}
+                    className='bg-primary/50 text-[1.2rem]/[1] px-2 py-2 rounded'
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
 
               <ul className='flex flex-wrap gap-6 md:gap-12 mt-12 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all'>
                 <li>

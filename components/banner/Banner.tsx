@@ -31,7 +31,7 @@ const Banner = () => {
           className='uppercase font-bold text-[3.8rem]/[1.11] md:text-[5.4rem] lg:text-[6.2rem] mb-6 font-robotoCondensed'
           variants={fadeInBottomChildren}
         >
-          {` Hi, I\'m Roshan`}
+          {`Hi, I\'m Roshan`}
         </motion.h1>
         <TypewriteText />
         <motion.div variants={fadeInBottomChildren}>

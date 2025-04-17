@@ -1,4 +1,4 @@
-import { MenuItem } from '@/types/all';
+import { MenuItem } from '@/types/types';
 
 export const menuItems: MenuItem[] = [
   {

@@ -1,10 +1,17 @@
-import { ExperienceType } from '@/types/all';
+import { ExperienceType } from '@/types/types';
 
 export const experienceData: ExperienceType[] = [
   {
+    startDate: 'January 2024',
+    endDate: 'June 2024',
+    jobPosition: 'Full-Stack Developer (Trainee)',
+    company: 'Integrify Academy',
+    address: 'Helsinki, Finland',
+  },
+  {
     startDate: 'July 2022',
     endDate: 'December 2023',
-    jobPosition: 'research assistant, Frontend Developer',
+    jobPosition: 'Frontend Developer',
     company: 'Tampere University',
     address: 'Tampere, Finland',
   },

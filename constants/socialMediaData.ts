@@ -1,6 +1,6 @@
 import { FaGithub, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 
-import { SocialMediaDataType } from '@/types/all';
+import { SocialMediaDataType } from '@/types/types';
 
 export const socialMediaData: SocialMediaDataType[] = [
   {

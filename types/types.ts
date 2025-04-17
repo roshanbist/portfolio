@@ -20,8 +20,8 @@ export type SocialMediaDataType = {
 };
 
 export type Skill = {
-  name: string;
-  proficiency: number;
+  label: string;
+  icon: IconType;
 };
 
 export type Skillset = {

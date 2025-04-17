@@ -1,116 +1,141 @@
-import { Skillset } from '@/types/all';
+import { Skillset } from '@/types/types';
+import {} from 'react-icons/fa';
+import {
+  SiAdobephotoshop,
+  SiBootstrap,
+  SiCss3,
+  SiDocker,
+  SiExpress,
+  SiFigma,
+  SiGit,
+  SiHtml5,
+  SiJavascript,
+  SiJest,
+  SiJira,
+  SiMongodb,
+  SiNextdotjs,
+  SiNodedotjs,
+  SiPostgresql,
+  SiPostman,
+  SiPython,
+  SiReact,
+  SiRedux,
+  SiSass,
+  SiTailwindcss,
+  SiTestinglibrary,
+  SiTypescript,
+} from 'react-icons/si';
+import { TbBrandFramerMotion } from 'react-icons/tb';
 
 export const skillsData: Skillset[] = [
   {
     title: 'Frontend Development',
     skills: [
       {
-        name: 'HTML',
-        proficiency: 100,
+        label: 'HTML5',
+        icon: SiHtml5,
       },
       {
-        name: 'CSS3 (SCSS/SASS)',
-        proficiency: 100,
-      },
-
-      {
-        name: 'Tailwind',
-        proficiency: 90,
+        label: 'CSS3',
+        icon: SiCss3,
       },
       {
-        name: 'JavaScript',
-        proficiency: 90,
+        label: 'SCSS/SASS',
+        icon: SiSass,
       },
       {
-        name: 'TypeScript',
-        proficiency: 85,
+        label: 'Tailwind CSS',
+        icon: SiTailwindcss,
       },
       {
-        name: 'React',
-        proficiency: 90,
+        label: 'JavaScript',
+        icon: SiJavascript,
       },
       {
-        name: 'Redux',
-        proficiency: 85,
+        label: 'TypeScript',
+        icon: SiTypescript,
       },
       {
-        name: 'Next.js',
-        proficiency: 75,
+        label: 'React',
+        icon: SiReact,
       },
       {
-        name: 'Bootstrap',
-        proficiency: 90,
+        label: 'Redux',
+        icon: SiRedux,
       },
-      // {
-      //   name: 'Material UI',
-      //   proficiency: 65,
-      // },
+      {
+        label: 'Next JS',
+        icon: SiNextdotjs,
+      },
+      {
+        label: 'Bootstrap',
+        icon: SiBootstrap,
+      },
+      {
+        label: 'Jest',
+        icon: SiJest,
+      },
+      {
+        label: 'React Testing Library',
+        icon: SiTestinglibrary,
+      },
+      {
+        label: 'Motion',
+        icon: TbBrandFramerMotion,
+      },
     ],
   },
   {
     title: 'Backend & Database',
     skills: [
       {
-        name: 'Node JS (Express JS)',
-        proficiency: 80,
+        label: 'Node JS',
+        icon: SiNodedotjs,
       },
       {
-        name: 'Python',
-        proficiency: 60,
+        label: 'Express JS',
+        icon: SiExpress,
       },
       {
-        name: 'Java',
-        proficiency: 55,
+        label: 'Python',
+        icon: SiPython,
       },
       {
-        name: 'MongooDB',
-        proficiency: 90,
+        label: 'MongooDB',
+        icon: SiMongodb,
       },
       {
-        name: 'REST API',
-        proficiency: 80,
-      },
-    ],
-  },
-  {
-    title: 'Design Tools',
-    skills: [
-      {
-        name: 'Adobe Photoshop',
-        proficiency: 90,
+        label: 'PostgreSQL',
+        icon: SiPostgresql,
       },
       {
-        name: 'Figma',
-        proficiency: 80,
-      },
-      {
-        name: 'Adobe Illustrator',
-        proficiency: 60,
+        label: 'Docker',
+        icon: SiDocker,
       },
     ],
   },
   {
-    title: 'Others',
+    title: 'Tools & Workflow',
     skills: [
       {
-        name: 'Postman',
-        proficiency: 100,
+        label: 'Adobe Photoshop',
+        icon: SiAdobephotoshop,
       },
       {
-        name: 'Git',
-        proficiency: 90,
+        label: 'Figma',
+        icon: SiFigma,
       },
       {
-        name: 'Jira',
-        proficiency: 90,
+        label: 'Postman',
+        icon: SiPostman,
       },
       {
-        name: 'Docker',
-        proficiency: 70,
+        label: 'Git',
+        icon: SiGit,
       },
       {
-        name: 'Jest',
-        proficiency: 65,
+        label: 'Jira',
+        icon: SiJira,
       },
     ],
   },
