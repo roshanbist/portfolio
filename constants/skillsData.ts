@@ -101,7 +101,7 @@ export const skillsData: Skillset[] = [
         icon: SiPython,
       },
       {
-        label: 'MongooDB',
+        label: 'MongoDB',
         icon: SiMongodb,
       },
       {
