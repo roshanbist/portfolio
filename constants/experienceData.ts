@@ -18,7 +18,7 @@ export const experienceData: ExperienceType[] = [
   {
     startDate: 'January 2015',
     endDate: 'July 2021',
-    jobPosition: 'mid-level frontend developer',
+    jobPosition: 'Frontend developer',
     company: 'Rapid Web Solutions',
     address: 'Kathmandu, Nepal',
   },

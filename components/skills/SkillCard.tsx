@@ -45,7 +45,7 @@ const SkillCard = ({ skills }: { skills: Skill[] }) => {
         <motion.div
           variants={fastFadeInBottomChildren}
           key={skill.label}
-          className='flex flex-col items-center w-[12%] mb-6 text-center'
+          className='flex flex-col items-center lg:w-[12%] mb-6 text-center'
         >
           <div className='rounded-[0.5rem] size-[6.5rem] bg-background p-4 flex justify-center items-center mb-6'>
             {<skill.icon className='text-2xl' />}
